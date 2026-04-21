@@ -38,10 +38,12 @@ This repository is built for our **Agent Skills** survey project and will be con
 
 ---
 
-## Taxonomy
+## Historical evolution of skills
 
 <p align="center">
-  <img src="figures/Figure3.png" width="95%" alt="Taxonomy of skill-centric LLM agent ecosystems"/>
+  <img src="hisotry (1).pdf" width="95%" alt="Historical evolution of skills, from embodied human survival and craftsmanship to engineering, industrial, digital,
+and agent-era skill systems. The figure situates skill-centric LLM agents as the latest stage in a long trajectory of capability
+abstraction, standardization, and reusable procedural packaging."/>
 </p>
 
 
