@@ -41,7 +41,7 @@ This repository is built for our **Agent Skills** survey project and will be con
 ## Historical evolution of skills
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JayLZhou/Awesome-Agent-Skills/main/history.png" width="95%" alt="history"/>
+  <img src="https://raw.githubusercontent.com/JayLZhou/Awesome-Agent-Skills/main/history.jpg" width="95%" alt="history"/>
 </p>
 
 
