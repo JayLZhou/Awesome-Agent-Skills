@@ -41,10 +41,9 @@ This repository is built for our **Agent Skills** survey project and will be con
 ## Historical evolution of skills
 
 <p align="center">
-  <img src="./history.pdf" width="95%" alt="Historical evolution of skills, from embodied human survival and craftsmanship to engineering, industrial, digital,
-and agent-era skill systems. The figure situates skill-centric LLM agents as the latest stage in a long trajectory of capability
-abstraction, standardization, and reusable procedural packaging."/>
+  <img src="https://raw.githubusercontent.com/JayLZhou/Awesome-Agent-Skills/main/history.png" width="95%" alt="history"/>
 </p>
+
 
 
 ---
