@@ -1,82 +1,156 @@
-<h1 align="center">Agent Skills</h1>
+<h1 align="center">🌟 Awesome Agent Skills 🌟</h1>
 
 <p align="center">
-  A curated list of papers, benchmarks, and ecosystem resources for skill-centric LLM agent ecosystems.
+  <b>A curated paper list and resource hub for skill-centric LLM agent ecosystems.</b>
+</p>
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://arxiv.org/abs/2605.07358"><img src="https://img.shields.io/badge/arXiv-2605.07358-b31b1b.svg?style=flat" alt="arXiv"></a>
+  <img src="https://img.shields.io/badge/Taxonomy-4%20Lifecycle%20Stages-6f42c1?style=flat" alt="Taxonomy">
+  <img src="https://img.shields.io/badge/Updated-2026--05--17-2ea44f?style=flat" alt="Updated">
 </p>
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Scope-Agent%20Skills-blue" alt="scope"/>
-  <img src="https://img.shields.io/badge/Taxonomy-4%20Modules-6f42c1" alt="taxonomy"/>
-  <img src="https://img.shields.io/badge/Updated-2026--04--21-success" alt="updated"/>
-</p>
-
-
-<p align="center">
-  <a href="#taxonomy">Taxonomy</a> •
-  <a href="#research-papers">Paper List</a> •
-  <a href="#benchmarks-and-evaluation">Benchmarks</a> •
-  <a href="#ecosystem-platforms-and-resources">Resources</a> •
+  <a href="#introduction">Introduction</a> ·
+  <a href="#taxonomy">Taxonomy</a> ·
+  <a href="#paper-list">Paper List</a> ·
+  <a href="#benchmarks-and-evaluation">Benchmarks</a> ·
+  <a href="#ecosystem-platforms-and-resources">Resources</a> ·
   <a href="#citation">Citation</a>
 </p>
 
+> [!NOTE]
+> This repository accompanies our survey, **A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications**.
+>
+> We collect papers, benchmarks, platforms, and ecosystem resources for understanding how reusable agent skills are represented, acquired, retrieved, selected, evolved, and governed.
+>
+> If this repository is useful for your work, please consider starring it and citing the survey.
 
-This repository follows the lifecycle perspective in our survey:
+```bibtex
+@article{zhou2026comprehensive,
+  title   = {A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications},
+  author  = {Zhou, Yingli and Wang, Shu and Su, Yaodong and Du, Wenchuan and Fang, Yixiang and Lin, Xuemin},
+  journal = {arXiv preprint arXiv:2605.07358},
+  year    = {2026}
+}
+```
 
-- **Skill Representation**
-- **Skill Acquisition**
-- **Skill Retrieval and Selection**
-- **Skill Evolution and Governance**
+<a id="contents"></a>
 
-This repository is built for our **Agent Skills** survey project and will be continuously updated.
+## 📚 Contents
 
----
-
-## Updates
-
-- **2026-04-21**: Initial public release aligned with the survey taxonomy.
-
----
-
-## Historical evolution of skills
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/JayLZhou/Awesome-Agent-Skills/main/history.png" width="95%" alt="history"/>
-</p>
-
-
-
-
----
-
-## Table of Contents
-
-- [Related Surveys](#related-surveys)
-- [Research Papers](#research-papers)
+- [🎯 Introduction](#introduction)
+- [🧩 What Are Agent Skills?](#what-are-agent-skills)
+- [🕰️ Historical Evolution of Skills](#historical-evolution-of-skills)
+- [🗺️ Taxonomy](#taxonomy)
+- [📄 Related Surveys](#related-surveys)
+- [📑 Paper List](#paper-list)
   - [0. Foundations: Tools, Protocols, Retrieval, Memory](#0-foundations-tools-protocols-retrieval-memory)
   - [1. Skill Representation](#1-skill-representation)
   - [2. Skill Acquisition](#2-skill-acquisition)
   - [3. Skill Retrieval and Selection](#3-skill-retrieval-and-selection)
   - [4. Skill Evolution and Governance](#4-skill-evolution-and-governance)
-- [Benchmarks and Evaluation](#benchmarks-and-evaluation)
-- [Ecosystem Platforms and Resources](#ecosystem-platforms-and-resources)
-- [Application Scenarios](#application-scenarios)
-- [Contributing](#contributing)
-- [Citation](#citation)
+- [🧪 Benchmarks and Evaluation](#benchmarks-and-evaluation)
+- [🛠️ Ecosystem Platforms and Resources](#ecosystem-platforms-and-resources)
+- [🚀 Application Scenarios](#application-scenarios)
+- [💡 Research Opportunities](#research-opportunities)
+- [🤝 Contributing](#contributing)
+- [✍️ Citation](#citation)
 
----
+<a id="introduction"></a>
 
-## Related Surveys
+## 🎯 Introduction
 
+LLM-based agents are moving from passive response generation toward action-oriented task execution. They can call tools, retrieve memories, operate APIs, write code, and interact with external environments. However, tool access alone does not solve the harder procedural question: **when should a capability be invoked, how should multiple steps be coordinated, how should failures be handled, and how should outputs be validated?**
+
+Our survey frames this bottleneck as the **procedural gap**. Agent skills address it by packaging reusable task-focused know-how into durable artifacts. Under this view, agents handle high-level intent interpretation, reasoning, and planning, while skills form the operational layer that makes execution reusable, inspectable, composable, and governable.
+
+This repository tracks the emerging research landscape around agent skills, including:
+
+- Representative papers across the agent-skill lifecycle.
+- Benchmarks and evaluation protocols for skill-centric agents.
+- Platforms and repositories for discovering, sharing, and governing skills.
+- Application scenarios where reusable skills are becoming central to agent performance.
+
+<p align="center">
+  <img src="./assets/2_number_of_papers.png" width="92%" alt="Growth of agent skills research papers">
+  <br>
+  <sub>Growth of representative research on agent skills from April 2023 to April 2026.</sub>
+</p>
+
+<a id="what-are-agent-skills"></a>
+
+## 🧩 What Are Agent Skills?
+
+In the survey, an **agent skill** is defined as a reusable procedural artifact with bounded scope. It externalizes task-focused know-how: not only what can be done, but also when to act, how to execute, what heuristics and failure modes matter, and how to judge completion.
+
+Formally, a skill can be modeled as:
+
+```text
+S = (M, R, C)
+```
+
+| Component | Meaning | Examples |
+|:--|:--|:--|
+| `M` | Main instruction document | A `SKILL.md`, SOP, checklist, or workflow prompt |
+| `R` | Auxiliary resources | References, templates, helper scripts, notebooks, schemas |
+| `C` | Applicability conditions | Trigger descriptions, metadata, dependencies, embeddings |
+
+Compared with raw tools, skills package the **how-to layer** around capability use. Compared with plain memory, skills are intended to be retrieved, executed, revised, and governed as reusable operational units.
+
+<a id="historical-evolution-of-skills"></a>
+
+## 🕰️ Historical Evolution of Skills
+
+<p align="center">
+  <img src="./assets/1_history.png" width="96%" alt="Historical evolution of skills">
+</p>
+<a id="taxonomy"></a>
+
+## 🗺️ Taxonomy
+
+We organize the literature around the **agent-skill lifecycle**, following the survey's taxonomy.
+
+| Lifecycle Stage | Core Question | Representative Topics |
+|:--|:--|:--|
+| **Skill Representation** | How is procedural know-how packaged? | Text-backed skills, code-backed skills, hybrid skills |
+| **Skill Acquisition** | Where do skills come from? | Human-derived, experience-derived, task-derived, corpus-derived acquisition |
+| **Skill Retrieval & Selection** | How does an agent choose the right skill at the right time? | Dense/sparse retrieval, generative retrieval, hierarchy/graph retrieval, context-aware routing, composition |
+| **Skill Evolution** | How do skills improve safely over time? | Revision, validation, policy coupling, repository evolution, trust, rollback, deprecation |
+
+At a high level, skill-centric agent systems turn transient agent behavior into persistent capabilities:
+
+```text
+experience / expertise / corpus / task
+        ↓
+skill acquisition
+        ↓
+skill representation
+        ↓
+retrieval + selection
+        ↓
+execution
+        ↓
+feedback, validation, evolution, governance
+```
+
+<a id="related-surveys"></a>
+
+## 📄 Related Surveys
+
+- (arXiv 2026) *A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications* [[Paper](https://arxiv.org/abs/2605.07358)]
 - (TechRxiv 2026) *A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution* [[Paper](https://www.techrxiv.org/doi/abs/10.36227/techrxiv.177203250.05832634/v2)]
 - (arXiv 2026) *Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering* [[Paper](https://arxiv.org/abs/2604.08224)]
 - (arXiv 2026) *SoK: Agentic Skills -- Beyond Tool Use in LLM Agents* [[Paper](https://arxiv.org/abs/2602.20867)]
 
----
+<a id="paper-list"></a>
 
-## Research Papers
+## 📑 Paper List
 
 ### 0. Foundations: Tools, Protocols, Retrieval, Memory
+
+These works provide the infrastructure layer for agent skills: tool use, protocol-based capability access, retrieval, memory, and agentic execution loops.
 
 - (NeurIPS 2023) *Toolformer* [[Paper](https://arxiv.org/abs/2302.04761)]
 - (ICLR 2023) *ReAct* [[Paper](https://arxiv.org/abs/2210.03629)]
@@ -98,6 +172,8 @@ This repository is built for our **Agent Skills** survey project and will be con
 - (arXiv 2026) *MSA* [[Paper](https://arxiv.org/abs/2603.23516)]
 
 ### 1. Skill Representation
+
+Skill representation studies how reusable procedural artifacts are packaged for agents to load, inspect, execute, and maintain.
 
 #### Text-Based Skills
 
@@ -121,6 +197,14 @@ This repository is built for our **Agent Skills** survey project and will be con
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
 
 ### 2. Skill Acquisition
+
+Skill acquisition studies how new skills are constructed from human expertise, agent experience, task demands, or external corpora.
+
+<p align="center">
+  <img src="./assets/4_skill_acquisition.png" width="96%" alt="Overview of skill acquisition methods">
+  <br>
+  <sub>Overview of skill acquisition routes: human-derived, experience-derived, task-derived, and corpus-derived skills.</sub>
+</p>
 
 #### Human-Derived
 
@@ -158,6 +242,14 @@ This repository is built for our **Agent Skills** survey project and will be con
 
 ### 3. Skill Retrieval and Selection
 
+Skill retrieval and selection ask how agents surface the right skill from a growing library, then decide whether to invoke, compose, or revise that skill under the current task state and budget.
+
+<p align="center">
+  <img src="./assets/5_skill_retrieval_and_selection.png" width="96%" alt="Skill retrieval and selection pipeline">
+  <br>
+  <sub>Skill retrieval narrows the candidate space; skill selection decides what to execute, compose, or adapt.</sub>
+</p>
+
 #### Retrieval
 
 - (ICLR 2025) *ToolGen: Unified Tool Retrieval and Calling via Generation* [[Paper](https://arxiv.org/abs/2410.03439)]
@@ -166,6 +258,7 @@ This repository is built for our **Agent Skills** survey project and will be con
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
 - (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
 - (arXiv 2026) *GraphSkill* [[Paper](https://arxiv.org/abs/2603.06620)]
+- (arXiv 2026) *Skill Retrieval Augmentation for Agentic AI* [[Paper](https://arxiv.org/abs/2604.24594)] [[Code](https://github.com/oneal2000/SR-Agents)] [[Dataset](https://huggingface.co/datasets/WeihangSu/SRA-Bench)]
 
 #### Selection and Routing
 
@@ -177,12 +270,21 @@ This repository is built for our **Agent Skills** survey project and will be con
 
 ### 4. Skill Evolution and Governance
 
+Skill evolution studies how skills are revised, validated, optimized, synchronized, deprecated, and governed after deployment.
+
+<p align="center">
+  <img src="./assets/6_skill_evolution.png" width="96%" alt="Skill evolution workflow">
+  <br>
+  <sub>Skill evolution turns feedback, failures, validation, and governance signals into safer reusable capabilities.</sub>
+</p>
+
 #### Skill Formation, Refinement, and RL Optimization
 
 - (arXiv 2024) *TROVE* [[Paper](https://arxiv.org/abs/2401.12869)]
 - (arXiv 2026) *Memento-Skills* [[Paper](https://arxiv.org/abs/2603.18743)]
 - (arXiv 2026) *AutoSkill* [[Paper](https://arxiv.org/abs/2603.01145)]
 - (arXiv 2026) *EvoSkill* [[Paper](https://arxiv.org/abs/2603.02766)]
+- (arXiv 2026) *CoEvoSkills* [[Paper](https://arxiv.org/abs/2604.01687)]
 - (arXiv 2026) *AutoRefine* [[Paper](https://arxiv.org/abs/2601.22758)]
 - (arXiv 2026) *SkillRL* [[Paper](https://arxiv.org/abs/2602.08234)]
 - (arXiv 2026) *Uni-Skill* [[Paper](https://arxiv.org/abs/2603.02623)]
@@ -204,9 +306,11 @@ This repository is built for our **Agent Skills** survey project and will be con
 - (arXiv 2025) *Audited Skill-Graph* [[Paper](https://arxiv.org/abs/2512.23760)]
 - (Zenodo 2026) *PoisonedSkills* [[Paper](https://doi.org/10.5281/zenodo.19281322)]
 
----
+<a id="benchmarks-and-evaluation"></a>
 
-## Benchmarks and Evaluation
+## 🧪 Benchmarks and Evaluation
+
+Skill-centric evaluation should measure more than final task success. Important dimensions include retrieval quality, selection utility, execution robustness, cost, recovery, transfer, and long-term library health.
 
 - *AgentBench* [[Paper](https://arxiv.org/abs/2308.03688)]
 - *WebArena* [[Paper](https://arxiv.org/abs/2307.13854)]
@@ -215,54 +319,57 @@ This repository is built for our **Agent Skills** survey project and will be con
 - *TRACE* [[Paper](https://arxiv.org/abs/2510.00415)]
 - *Evo-Memory* [[Paper](https://arxiv.org/abs/2511.20857)]
 - *SkillsBench* [[Paper](https://arxiv.org/abs/2602.12670)]
+- *SRA-Bench* [[Paper](https://arxiv.org/abs/2604.24594)] [[Code](https://github.com/oneal2000/SR-Agents)] [[Dataset](https://huggingface.co/datasets/WeihangSu/SRA-Bench)]
 
----
+<a id="ecosystem-platforms-and-resources"></a>
 
-## Ecosystem Platforms and Resources
+## 🛠️ Ecosystem Platforms and Resources
 
-- **SkillNet**: https://skillnet.openkg.cn/
-- **ClawHub**: https://clawhub.ai/
-- **SkillHub**: https://www.skillhub.club/
-- **SkillsMP**: https://skillsmp.com/
-- **Skills.sh**: https://skills.sh/
+<p align="center">
+  <img src="./assets/3_number_of_skills.png" width="92%" alt="Growth of human-derived agent skills">
+  <br>
+  <sub>Growth of human-derived skills in emerging agent-skill platforms.</sub>
+</p>
 
----
+| Platform | Link | Focus |
+|:--|:--|:--|
+| **SkillNet** | https://skillnet.openkg.cn/ | Large-scale skill repository and organization |
+| **ClawHub** | https://clawhub.ai/ | Agent skill sharing and discovery |
+| **SkillHub** | https://www.skillhub.club/ | Community skill resources |
+| **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
+| **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
+| **SR-Agents** | https://github.com/oneal2000/SR-Agents | Toolkit and evaluation pipelines for skill retrieval augmentation |
 
-## Application Scenarios
+<a id="application-scenarios"></a>
 
-- **Code Agents**: reusable coding/debugging/test-repair skills (e.g., CodeAct, SWE-agent, DS-Agent).
-- **Web/GUI Agents**: UI-script and workflow skills for browser/app control (e.g., Synapse, SkillWeaver).
-- **Chatbots**: memory/tool-routing skills for long-horizon conversations and tool use (e.g., MemGPT, HyperMem).
-- **Robotics/Embodied**: executable policy/skill libraries for grounded control (e.g., Voyager, Uni-Skill).
-- **Healthcare/Finance**: domain-constrained procedural skills with safety and compliance requirements.
-- **Game/Social Simulation**: open-ended skill growth and memory-driven behavior adaptation.
+## 🚀 Application Scenarios
 
----
+<p align="center">
+  <img src="./assets/7_application.png" width="72%" alt="Application scenarios of agent skills">
+  <br>
+  <sub>Representative application scenarios where agent skills act as reusable operational units.</sub>
+</p>
+<a id="research-opportunities"></a>
 
-## Contributing
+## 💡 Research Opportunities
 
-Contributions are very welcome.
+The survey highlights several open directions for future agent-skill research:
 
-If you want to add a paper/resource, please include:
+- **Unified skill schema**: Common fields for scope, triggers, dependencies, versioning, resources, safety constraints, and provenance.
+- **Resource-aware optimization**: Jointly optimize retrieval, planning, execution, latency, tool cost, and risk.
+- **Library evolution under non-stationarity**: Handle API drift, changing task distributions, compatibility checks, rollback, and regression recovery.
+- **Multimodal and domain-specific benchmarks**: Evaluate skills in embodied, GUI, robotics, autonomous driving, UAV, healthcare, finance, and other constrained settings.
+- **Causality-driven skill diagnosis**: Attribute failures to retrieval mismatch, policy mis-selection, unsafe composition, stale dependencies, or tool malfunction.
+
+<a id="contributing"></a>
+
+## 🤝 Contributing
+
+Contributions are welcome. If you want to add a paper, benchmark, project, or platform, please include:
 
 1. Title
-2. Venue/Year
-3. Link (paper/code/project)
+2. Venue and year
+3. Link to paper, code, project, or website
 4. Suggested category in this taxonomy
 
 You can open an issue or submit a pull request directly.
-
----
-
-## Citation
-
-If this repository is useful for your work, please cite our survey project.
-
-```bibtex
-@article{agentskills2026,
-  title   = {Agent Skills: A Survey of Skill-Centric LLM Agent Ecosystems},
-  author  = {Anonymous},
-  year    = {2026},
-  note    = {Manuscript in preparation}
-}
-```
