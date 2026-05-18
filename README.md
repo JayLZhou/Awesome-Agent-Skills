@@ -7,7 +7,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://arxiv.org/abs/2605.07358"><img src="https://img.shields.io/badge/arXiv-2605.07358-b31b1b.svg?style=flat" alt="arXiv"></a>
   <img src="https://img.shields.io/badge/Taxonomy-4%20Lifecycle%20Stages-6f42c1?style=flat" alt="Taxonomy">
-  <img src="https://img.shields.io/badge/Updated-2026--05--17-2ea44f?style=flat" alt="Updated">
+  <img src="https://img.shields.io/badge/Updated-2026--05--18-2ea44f?style=flat" alt="Updated">
 </p>
 
 
@@ -181,6 +181,7 @@ Skill representation studies how reusable procedural artifacts are packaged for 
 - (AAAI 2024) *ExpeL* [[Paper](https://arxiv.org/abs/2308.10144)]
 - (NeurIPS 2024) *Buffer of Thoughts* [[Paper](https://arxiv.org/abs/2406.04271)]
 - (arXiv 2026) *Trace2Skill* [[Paper](https://arxiv.org/abs/2603.25158)]
+- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
 
 #### Code-Backed Skills
 
@@ -239,6 +240,7 @@ Skill acquisition studies how new skills are constructed from human expertise, a
 - (arXiv 2023) *HuggingGPT* [[Paper](https://arxiv.org/abs/2303.17580)]
 - (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
 - (arXiv 2024) *DS-Agent* [[Paper](https://arxiv.org/abs/2402.17453)]
+- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
 
 ### 3. Skill Retrieval and Selection
 
@@ -258,7 +260,6 @@ Skill retrieval and selection ask how agents surface the right skill from a grow
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
 - (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
 - (arXiv 2026) *GraphSkill* [[Paper](https://arxiv.org/abs/2603.06620)]
-- (arXiv 2026) *Skill Retrieval Augmentation for Agentic AI* [[Paper](https://arxiv.org/abs/2604.24594)] [[Code](https://github.com/oneal2000/SR-Agents)] [[Dataset](https://huggingface.co/datasets/WeihangSu/SRA-Bench)]
 
 #### Selection and Routing
 
@@ -266,6 +267,7 @@ Skill retrieval and selection ask how agents surface the right skill from a grow
 - (arXiv 2026) *MemSkill* [[Paper](https://arxiv.org/abs/2602.02474)]
 - (arXiv 2026) *Memento-Skills* [[Paper](https://arxiv.org/abs/2603.18743)]
 - (arXiv 2026) *SkillRouter* [[Paper](https://arxiv.org/abs/2603.22455)]
+- (arXiv 2026) *GraSP* [[Paper](https://arxiv.org/abs/2604.17870)]
 - (Findings ACL 2025) *ToolExpNet* [[Paper](https://aclanthology.org/2025.findings-acl.811/)]
 
 ### 4. Skill Evolution and Governance
@@ -285,6 +287,7 @@ Skill evolution studies how skills are revised, validated, optimized, synchroniz
 - (arXiv 2026) *AutoSkill* [[Paper](https://arxiv.org/abs/2603.01145)]
 - (arXiv 2026) *EvoSkill* [[Paper](https://arxiv.org/abs/2603.02766)]
 - (arXiv 2026) *CoEvoSkills* [[Paper](https://arxiv.org/abs/2604.01687)]
+- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
 - (arXiv 2026) *AutoRefine* [[Paper](https://arxiv.org/abs/2601.22758)]
 - (arXiv 2026) *SkillRL* [[Paper](https://arxiv.org/abs/2602.08234)]
 - (arXiv 2026) *Uni-Skill* [[Paper](https://arxiv.org/abs/2603.02623)]
@@ -338,7 +341,6 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
-| **SR-Agents** | https://github.com/oneal2000/SR-Agents | Toolkit and evaluation pipelines for skill retrieval augmentation |
 
 <a id="application-scenarios"></a>
 
