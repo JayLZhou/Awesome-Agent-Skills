@@ -52,7 +52,7 @@
   - [1. Skill Representation](#1-skill-representation)
   - [2. Skill Acquisition](#2-skill-acquisition)
   - [3. Skill Retrieval and Selection](#3-skill-retrieval-and-selection)
-  - [4. Skill Evolution](#4-skill-evolution)
+  - [4. Skill Evolution and Governance](#4-skill-evolution-and-governance)
 - [🧪 Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [🛠️ Ecosystem Platforms and Resources](#ecosystem-platforms-and-resources)
 - [🚀 Application Scenarios](#application-scenarios)
