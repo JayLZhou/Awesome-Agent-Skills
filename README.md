@@ -7,8 +7,10 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://arxiv.org/abs/2605.07358"><img src="https://img.shields.io/badge/arXiv-2605.07358-b31b1b.svg?style=flat" alt="arXiv"></a>
   <img src="https://img.shields.io/badge/Taxonomy-4%20Lifecycle%20Stages-6f42c1?style=flat" alt="Taxonomy">
-  <img src="https://img.shields.io/badge/Updated-2026--05--18-2ea44f?style=flat" alt="Updated">
+  <img src="https://img.shields.io/badge/Collected%20Papers-123-1f6feb?style=flat" alt="Collected Papers">
+  <img src="https://img.shields.io/badge/Updated-2026--06--10-2ea44f?style=flat" alt="Updated">
 </p>
+
 
 
 <p align="center">
@@ -50,7 +52,7 @@
   - [1. Skill Representation](#1-skill-representation)
   - [2. Skill Acquisition](#2-skill-acquisition)
   - [3. Skill Retrieval and Selection](#3-skill-retrieval-and-selection)
-  - [4. Skill Evolution and Governance](#4-skill-evolution-and-governance)
+  - [4. Skill Evolution](#4-skill-evolution)
 - [🧪 Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [🛠️ Ecosystem Platforms and Resources](#ecosystem-platforms-and-resources)
 - [🚀 Application Scenarios](#application-scenarios)
@@ -139,6 +141,8 @@ feedback, validation, evolution, governance
 
 ## 📄 Related Surveys
 
+- (OpenReview 2026) *A Survey on Agent Skills: Externalized Procedural Knowledge in Language Models* [[Paper](https://openreview.net/forum?id=S184SW2SPX)]
+- (Preprints 2026) *A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents* [[Paper](https://www.preprints.org/manuscript/202605.1276)]
 - (TechRxiv 2026) *A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution* [[Paper](https://www.techrxiv.org/doi/abs/10.36227/techrxiv.177203250.05832634/v2)]
 - (arXiv 2026) *Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering* [[Paper](https://arxiv.org/abs/2604.08224)]
 - (arXiv 2026) *SoK: Agentic Skills -- Beyond Tool Use in LLM Agents* [[Paper](https://arxiv.org/abs/2602.20867)]
@@ -188,6 +192,8 @@ Skill representation studies how reusable procedural artifacts are packaged for 
 - (arXiv 2026) *SkillCraft* [[Paper](https://arxiv.org/abs/2603.00718)]
 - (ICLR 2026) *PolySkill* [[Paper](https://arxiv.org/abs/2510.15863)]
 - (arXiv 2025) *Inducing Programmatic Skills for Agentic Tasks* [[Paper](https://arxiv.org/abs/2504.06821)]
+- (arXiv 2026) *Harnessing LLM Agents with Skill Programs* [[Paper](https://arxiv.org/abs/2605.17734)]
+- (arXiv 2026) *Skill-as-Pseudocode* [[Paper](https://arxiv.org/abs/2605.27955)]
 
 #### Hybrid Skills
 
@@ -195,6 +201,9 @@ Skill representation studies how reusable procedural artifacts are packaged for 
 - (ICLR 2024) *Synapse* [[Paper](https://arxiv.org/abs/2306.07863)]
 - (arXiv 2025) *SkillWeaver* [[Paper](https://arxiv.org/abs/2504.07079)]
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
+- (arXiv 2026) *Agent Skills Should Go Beyond Text: The Case for Visual Skills* [[Paper](https://arxiv.org/abs/2606.01414)]
+- (arXiv 2026) *Skill-RM* [[Paper](https://arxiv.org/abs/2606.03980)]
+- (arXiv 2026) *AIP* [[Paper](https://arxiv.org/abs/2606.04781)]
 
 ### 2. Skill Acquisition
 
@@ -212,6 +221,7 @@ Skill acquisition studies how new skills are constructed from human expertise, a
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
 - (arXiv 2026) *SoK: Agentic Skills* [[Paper](https://arxiv.org/abs/2602.20867)]
 - (arXiv 2024) *Agent Hospital* [[Paper](https://arxiv.org/abs/2405.02957)]
+- (arXiv 2026) *SciVisAgentSkills* [[Paper](https://arxiv.org/abs/2606.05525)]
 
 #### Experience-Derived
 
@@ -224,6 +234,7 @@ Skill acquisition studies how new skills are constructed from human expertise, a
 - (arXiv 2025) *AgentEvolver* [[Paper](https://arxiv.org/abs/2511.10395)]
 - (arXiv 2025) *G-memory* [[Paper](https://arxiv.org/abs/2506.07398)]
 - (arXiv 2025) *Nemori* [[Paper](https://arxiv.org/abs/2502.14828)]
+- (arXiv 2026) *PANDO* [[Paper](https://arxiv.org/abs/2605.24785)]
 
 #### Task-Derived
 
@@ -255,10 +266,11 @@ Skill retrieval and selection ask how agents surface the right skill from a grow
 
 - (ICLR 2025) *ToolGen: Unified Tool Retrieval and Calling via Generation* [[Paper](https://arxiv.org/abs/2410.03439)]
 - (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
-- (arXiv 2026) *SkillRL* [[Paper](https://arxiv.org/abs/2602.08234)]
 - (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
 - (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
 - (arXiv 2026) *GraphSkill* [[Paper](https://arxiv.org/abs/2603.06620)]
+- (arXiv 2026) *Skill Is Not Document* [[Paper](https://arxiv.org/abs/2606.03565)]
+- (arXiv 2026) *SkillDAG* [[Paper](https://arxiv.org/abs/2606.03056)]
 
 #### Selection and Routing
 
@@ -268,6 +280,10 @@ Skill retrieval and selection ask how agents surface the right skill from a grow
 - (arXiv 2026) *SkillRouter* [[Paper](https://arxiv.org/abs/2603.22455)]
 - (arXiv 2026) *GraSP* [[Paper](https://arxiv.org/abs/2604.17870)]
 - (Findings ACL 2025) *ToolExpNet* [[Paper](https://aclanthology.org/2025.findings-acl.811/)]
+- (arXiv 2026) *Maestro* [[Paper](https://arxiv.org/abs/2605.22177)]
+- (arXiv 2026) *Skill is Not One-Size-Fits-All* [[Paper](https://arxiv.org/abs/2605.30723)]
+- (arXiv 2026) *Skill or Skip? Learning Selective Skill Invocation in Agentic Tasks via Dual-Granularity Preference Learning* [[Paper](https://arxiv.org/abs/2606.00510)]
+- (arXiv 2026) *SkillsInjector* [[Paper](https://arxiv.org/abs/2605.29794)]
 
 ### 4. Skill Evolution and Governance
 
@@ -292,6 +308,22 @@ Skill evolution studies how skills are revised, validated, optimized, synchroniz
 - (arXiv 2026) *Uni-Skill* [[Paper](https://arxiv.org/abs/2603.02623)]
 - (arXiv 2026) *ARISE* [[Paper](https://arxiv.org/abs/2603.16060)]
 - (arXiv 2025) *CASCADE* [[Paper](https://arxiv.org/abs/2512.23880)]
+- (arXiv 2026) *SkillOpt* [[Paper](https://arxiv.org/abs/2605.23904)]
+- (arXiv 2026) *MUSE-Autoskill* [[Paper](https://arxiv.org/abs/2605.27366)]
+- (arXiv 2026) *SkillRevise* [[Paper](https://arxiv.org/abs/2606.01139)]
+- (arXiv 2026) *SkillSmith* [[Paper](https://arxiv.org/abs/2606.01314)]
+- (arXiv 2026) *ReSkill* [[Paper](https://arxiv.org/abs/2606.01619)]
+- (arXiv 2026) *SkillComposer* [[Paper](https://arxiv.org/abs/2606.06079)]
+- (arXiv 2026) *MOCHA* [[Paper](https://arxiv.org/abs/2605.19330)]
+- (arXiv 2026) *SkillGrad* [[Paper](https://arxiv.org/abs/2605.27760)]
+- (arXiv 2026) *You Live More Than Once: Towards Hierarchical Skill Meta-Evolving* [[Paper](https://arxiv.org/abs/2605.28390)]
+- (arXiv 2026) *GRASP* [[Paper](https://arxiv.org/abs/2605.29668)]
+- (arXiv 2026) *FederatedSkill* [[Paper](https://arxiv.org/abs/2606.03143)]
+- (arXiv 2026) *Bayesian-Agent* [[Paper](https://arxiv.org/abs/2606.08348)]
+- (arXiv 2026) *SkillHone* [[Paper](https://arxiv.org/abs/2606.08671)]
+- (arXiv 2026) *SKILL0* [[Paper](https://arxiv.org/abs/2604.02268)]
+- (arXiv 2026) *Skill1* [[Paper](https://arxiv.org/abs/2605.06130)]
+- (arXiv 2026) *Skill0.5* [[Paper](https://arxiv.org/abs/2605.28424)]
 
 #### Memory-Centric and Runtime Re-entry
 
@@ -307,6 +339,14 @@ Skill evolution studies how skills are revised, validated, optimized, synchroniz
 - (Preprints 2026) *SkillOS* [[Paper](https://www.preprints.org/manuscript/202602.1096/v1)]
 - (arXiv 2025) *Audited Skill-Graph* [[Paper](https://arxiv.org/abs/2512.23760)]
 - (Zenodo 2026) *PoisonedSkills* [[Paper](https://doi.org/10.5281/zenodo.19281322)]
+- (arXiv 2026) *SkillsVote* [[Paper](https://arxiv.org/abs/2605.18401)]
+- (arXiv 2026) *Library Drift* [[Paper](https://arxiv.org/abs/2605.19576)]
+- (arXiv 2026) *Harmless Yet Harmful* [[Paper](https://arxiv.org/abs/2605.29354)]
+- (arXiv 2026) *When Safe Skills Collide: Measuring Compositional Risk in Agent Skill Ecosystems* [[Paper](https://arxiv.org/abs/2606.00448)]
+- (arXiv 2026) *ClawHub Security Signals: When VirusTotal, Static Analysis, and SkillSpector Disagree* [[Paper](https://arxiv.org/abs/2606.01494)]
+- (arXiv 2026) *SkillHarm* [[Paper](https://arxiv.org/abs/2606.02540)]
+- (arXiv 2026) *SkillGuard* [[Paper](https://arxiv.org/abs/2606.03024)]
+- (arXiv 2026) *POISE* [[Paper](https://arxiv.org/abs/2606.07943)]
 
 <a id="benchmarks-and-evaluation"></a>
 
@@ -322,6 +362,15 @@ Skill-centric evaluation should measure more than final task success. Important 
 - *Evo-Memory* [[Paper](https://arxiv.org/abs/2511.20857)]
 - *SkillsBench* [[Paper](https://arxiv.org/abs/2602.12670)]
 - *SRA-Bench* [[Paper](https://arxiv.org/abs/2604.24594)] [[Code](https://github.com/oneal2000/SR-Agents)] [[Dataset](https://huggingface.co/datasets/WeihangSu/SRA-Bench)]
+- *R3-Skill* [[Paper](https://arxiv.org/abs/2606.03565)]
+- *SkillHarm* [[Paper](https://arxiv.org/abs/2606.02540)]
+- *MalSkillBench* [[Paper](https://arxiv.org/abs/2606.07131)]
+- *SkillGenBench* [[Paper](https://arxiv.org/abs/2605.18693)]
+- *SkillEvolBench* [[Paper](https://arxiv.org/abs/2605.24117)]
+- *From Raw Experience to Skill Consumption* [[Paper](https://arxiv.org/abs/2605.23899)]
+- *When Skills Don't Help* [[Paper](https://arxiv.org/abs/2605.20023)]
+- *More Skills, Worse Agents?* [[Paper](https://arxiv.org/abs/2605.24050)]
+- *Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems* [[Paper](https://arxiv.org/abs/2606.00925)]
 
 <a id="ecosystem-platforms-and-resources"></a>
 
