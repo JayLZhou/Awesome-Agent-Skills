@@ -389,6 +389,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
+| **AI Native Dev / vibe-skills** | https://skill.ferryman.app/ | Repo-native workflow skills for AI coding agents |
 
 <a id="application-scenarios"></a>
 
