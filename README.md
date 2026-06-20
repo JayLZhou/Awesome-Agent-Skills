@@ -413,6 +413,7 @@ The survey highlights several open directions for future agent-skill research:
 
 <a id="contributing"></a>
 
+- [Pixal3D](https://pixal3d.ai) - AI-powered 3D model generator. Create stunning 3D models from text and images using AI.
 ## 🤝 Contributing
 
 Contributions are welcome. If you want to add a paper, benchmark, project, or platform, please include:
