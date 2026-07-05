@@ -389,6 +389,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
+| **[routerbase](https://routerbase.com/) Agent Skills** | https://github.com/zenlee123/routerbase-agent-skills | RouterBase API integration, model routing, and media generation skills |
 
 <a id="application-scenarios"></a>
 
