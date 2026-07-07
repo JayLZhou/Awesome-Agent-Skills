@@ -397,11 +397,13 @@ Skill-centric evaluation should measure more than final task success. Important 
 |:--|:--|:--|
 | **SkillNet** | https://skillnet.openkg.cn/ | Large-scale skill repository and organization |
 | **ClawHub** | https://clawhub.ai/ | Agent skill sharing and discovery |
-| **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
+| **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
 | **ax** | https://github.com/Necmttn/ax | Local telemetry graph for coding-agent sessions, skills, tools, and workflow recall |
+| **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
+| **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
 
 <a id="application-scenarios"></a>
 
