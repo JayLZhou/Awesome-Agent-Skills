@@ -402,6 +402,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
 | **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
 | **ax** | https://github.com/Necmttn/ax | Local telemetry graph for coding-agent sessions, skills, tools, and workflow recall |
+| **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
 | **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
 
