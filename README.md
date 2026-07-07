@@ -397,6 +397,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 |:--|:--|:--|
 | **SkillNet** | https://skillnet.openkg.cn/ | Large-scale skill repository and organization |
 | **ClawHub** | https://clawhub.ai/ | Agent skill sharing and discovery |
+| **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
