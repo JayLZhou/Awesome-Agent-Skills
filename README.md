@@ -408,6 +408,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 <a id="application-scenarios"></a>
 
+| **linkedin-growth** | https://github.com/Linked-API/linkedin-skills/tree/main/linkedin-growth | Import leads from LinkedIn or Sales Navigator searches, qualify them against an ideal-customer profile, schedule safe connection invites across accounts, track acceptances, and withdraw stale pending requests. |
 ## 🚀 Application Scenarios
 
 <p align="center">
