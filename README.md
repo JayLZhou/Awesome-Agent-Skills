@@ -405,6 +405,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
 | **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
+| **Maoxuan Product Agent** | https://github.com/atdy/maoxuan-product-agent | Chinese-first product decision skill distilled from *On Practice* and *On Contradiction*, with 36 scenario playbooks for Codex, Claude Code, and Cursor |
 
 <a id="application-scenarios"></a>
 
