@@ -401,6 +401,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
 | **BrowserAct Skills** | https://github.com/browser-act/skills | Browser automation skills for AI agents with local Chrome reuse, isolated sessions, and human handoff |
+| **UIZZE** | https://uizze.com | Free anti-UI-slop skill and 800,000+ real web and iOS product screens for Codex, Claude Code, Cursor, and other coding agents |
 | **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
 | **Markstream Skills** | https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills | Framework-specific skills for streaming Markdown across Vue, React, Svelte, Angular, Nuxt, Next.js, and Vue 2 |
 | **ax** | https://github.com/Necmttn/ax | Local telemetry graph for coding-agent sessions, skills, tools, and workflow recall |
