@@ -8,9 +8,8 @@
   <a href="https://arxiv.org/abs/2605.07358"><img src="https://img.shields.io/badge/arXiv-2605.07358-b31b1b.svg?style=flat" alt="arXiv"></a>
   <img src="https://img.shields.io/badge/Taxonomy-4%20Lifecycle%20Stages-6f42c1?style=flat" alt="Taxonomy">
   <img src="https://img.shields.io/badge/Collected%20Papers-135-1f6feb?style=flat" alt="Collected Papers">
-  <img src="https://img.shields.io/badge/Updated-2026--07--07-2ea44f?style=flat" alt="Updated">
+  <img src="https://img.shields.io/badge/Updated-2026--07--26-2ea44f?style=flat" alt="Updated">
 </p>
-
 
 <p align="center">
   <a href="#introduction">Introduction</a> ·
@@ -408,6 +407,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
 | **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
+| **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 
 <a id="application-scenarios"></a>
 
