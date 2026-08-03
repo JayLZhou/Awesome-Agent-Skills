@@ -409,6 +409,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **RunAPI CLI Skill** | https://github.com/runapi-ai/cli-skill | Agent workflow skill for running RunAPI image, video, music/audio, and LLM model jobs from Codex and Claude-compatible agents |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
+| **Suede Creator Skills** | https://github.com/JasonColapietro/suede-creator-skills | 67 MIT-licensed Claude Code and Codex skills for orchestration, code review, AI evaluation, product, design, and growth workflows |
 
 <a id="application-scenarios"></a>
 
