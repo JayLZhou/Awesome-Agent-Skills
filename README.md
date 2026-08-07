@@ -251,6 +251,7 @@ Skill acquisition studies how new skills are constructed from human expertise, a
 - (arXiv 2023) *HuggingGPT* [[Paper](https://arxiv.org/abs/2303.17580)]
 - (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
 - (arXiv 2024) *DS-Agent* [[Paper](https://arxiv.org/abs/2402.17453)]
+- (arXiv 2026) *OpenSkill: Open-World Self-Evolution for LLM Agents* [[Paper](https://arxiv.org/abs/2606.06741)]
 - (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
 
 ### 3. Skill Retrieval and Selection
