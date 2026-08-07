@@ -408,6 +408,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
 | **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
 | **RunAPI CLI Skill** | https://github.com/runapi-ai/cli-skill | Agent workflow skill for running RunAPI image, video, music/audio, and LLM model jobs from Codex and Claude-compatible agents |
+| **Orkas VideoStudio** | https://github.com/Orkas-AI/Orkas-VideoStudio | Source-installable video skills and MCP tools for Codex and Claude Code with editable timelines |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 
