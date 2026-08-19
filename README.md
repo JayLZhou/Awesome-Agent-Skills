@@ -400,6 +400,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
 | **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
 | **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
+| **SandBase Skills** | https://github.com/sandbaseai/sandbase-skills | 88 Apache-2.0 Agent Skills for research, social intelligence, marketing, and business workflows, with cross-agent installation and offline validation examples |
 | **BrowserAct Skills** | https://github.com/browser-act/skills | Browser automation skills for AI agents with local Chrome reuse, isolated sessions, and human handoff |
 | **UIZZE** | https://uizze.com | Free anti-UI-slop skill and 800,000+ real web and iOS product screens for Codex, Claude Code, Cursor, and other coding agents |
 | **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
