@@ -411,6 +411,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Orkas VideoStudio** | https://github.com/Orkas-AI/Orkas-VideoStudio | Source-installable video skills and MCP tools for Codex and Claude Code with editable timelines |
 | **Duvo Skills** | https://github.com/duvoai/skills | Public agent skills for grocery and retail operations execution; SOP writer, run debugger, and CLI driver across existing systems |
 | **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
+| **shidi-skill** | https://github.com/IcyCreamDAS/shidi-skill | Bilingual scientific research workflow skill: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief. Zero deps, MIT |
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 
 <a id="application-scenarios"></a>
