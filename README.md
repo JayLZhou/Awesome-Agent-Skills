@@ -415,6 +415,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **shidi-skill** | https://github.com/IcyCreamDAS/shidi-skill | Bilingual scientific research workflow skill: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief. Zero deps, MIT |
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 | **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
+| **ctx-optimize** | https://github.com/muthuishere/ctx-optimize | Deterministic code knowledge graph as an agent skill: a static Go binary indexes a repository, and optionally its databases, buckets, queues and APIs, into a local store that answers who calls a symbol and what breaks if it changes in one call; no LLM, embeddings, or credentials at rest |
 
 <a id="application-scenarios"></a>
 
