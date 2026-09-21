@@ -416,6 +416,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 | **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
+| **Marketing Mindset** | https://github.com/axelfreeman/marketing-mindset | MIT agent skill carrying a marketer's decision framework instead of a tactics library: how to pick competitors as the source of truth, what evidence counts, how to win client #1 by hand, when money is for scaling only, positioning, offers, and cold outreach; its README publishes the volume floors at which a test can be judged (cold email 1,500-2,000 sends per variant, subject lines 100-500 per version, landing-page smoke tests 100-200 targeted visitors, paid ads only after 1-3x target CPA over 48-72 hours). Pure reasoning - no scripts, no network calls, no credentials |
 
 <a id="application-scenarios"></a>
 
