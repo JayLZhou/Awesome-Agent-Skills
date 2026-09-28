@@ -416,7 +416,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 | **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
-| **Jev Social** | https://github.com/socai-io/jev-social/tree/v0.1.5/skills/jev-social | Source-installable read-only social research skill: Jev selects bounded operations, the local `socai CLI` uses signed-in Chrome on Instagram, TikTok, and LinkedIn, and captured evidence becomes a cited report |
+| **Jev Social** | https://github.com/socai-io/jev-social/tree/0ea7be9d2ad4e19d1ae629d9b01bb670a90546b8/skills/jev-social | Source-installable read-only social research skill: Jev selects bounded operations, the local `socai CLI` uses signed-in Chrome on Instagram, TikTok, and LinkedIn, and captured evidence becomes a cited report |
 
 <a id="application-scenarios"></a>
 
