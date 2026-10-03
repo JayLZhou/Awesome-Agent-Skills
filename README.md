@@ -416,6 +416,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 | **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
+| **Cloudish Skill** | https://github.com/cloudishai/skills/tree/main/skills/cloudish | MIT Agent Skill and Claude Code plugin that has an agent deploy a Dockerfile, source folder, or container image to Cloudish and report the live URL, using an API key the agent creates itself |
 
 <a id="application-scenarios"></a>
 
