@@ -407,6 +407,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Markstream Skills** | https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills | Framework-specific skills for streaming Markdown across Vue, React, Svelte, Angular, Nuxt, Next.js, and Vue 2 |
 | **ax** | https://github.com/Necmttn/ax | Local telemetry graph for coding-agent sessions, skills, tools, and workflow recall |
 | **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
+| **Hyperconsciousness** | https://github.com/louis030195/hyperconsciousness/tree/main/skills/hyperconsciousness | Public agent skill for source-backed recall through HC, a developer-alpha encrypted, append-only knowledge store with CLI/MCP access; requires an HC installation and separately authorized store access |
 | **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
 | **RunAPI CLI Skill** | https://github.com/runapi-ai/cli-skill | Agent workflow skill for running RunAPI image, video, music/audio, and LLM model jobs from Codex and Claude-compatible agents |
 | **Orkas VideoStudio** | https://github.com/Orkas-AI/Orkas-VideoStudio | Source-installable video skills and MCP tools for Codex and Claude Code with editable timelines |
