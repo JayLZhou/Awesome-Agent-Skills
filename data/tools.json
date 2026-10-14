@@ -1,0 +1,330 @@
+[
+  {
+    "name": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "category": "official",
+    "desc": "Anthropic's official public repo: production document skills (docx, pdf, pptx, xlsx), a skill template, skill-creator, and the spec.",
+    "repo": "anthropics/skills"
+  },
+  {
+    "name": "Agent Skills Specification",
+    "url": "https://agentskills.io/specification",
+    "category": "official",
+    "desc": "The open, vendor-neutral standard for the SKILL.md format, adopted beyond Claude."
+  },
+  {
+    "name": "agentskills/agentskills",
+    "url": "https://github.com/agentskills/agentskills",
+    "category": "official",
+    "desc": "Specification and documentation repository for the open Agent Skills standard.",
+    "repo": "agentskills/agentskills"
+  },
+  {
+    "name": "Agent Skills overview (Claude docs)",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+    "category": "official",
+    "desc": "Official docs on what skills are, how discovery and loading works, and how to build them."
+  },
+  {
+    "name": "Introducing Agent Skills (Anthropic)",
+    "url": "https://claude.com/blog/skills",
+    "category": "official",
+    "desc": "The launch announcement of Agent Skills as an open standard, plus the design deep-dive."
+  },
+  {
+    "name": "Claude Skills gallery",
+    "url": "https://claude.com/skills",
+    "category": "official",
+    "desc": "Anthropic's official gallery of prebuilt skills (PowerPoint, Excel, Word, PDF, and more)."
+  },
+  {
+    "name": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "category": "collections",
+    "desc": "Jesse Vincent's agentic skills framework and methodology: a large library of composable skills, in Claude Code's official marketplace.",
+    "repo": "obra/superpowers"
+  },
+  {
+    "name": "obra/superpowers-skills",
+    "url": "https://github.com/obra/superpowers-skills",
+    "category": "collections",
+    "desc": "The community-editable skills library behind the Superpowers plugin.",
+    "repo": "obra/superpowers-skills"
+  },
+  {
+    "name": "obra/superpowers-marketplace",
+    "url": "https://github.com/obra/superpowers-marketplace",
+    "category": "collections",
+    "desc": "Curated Claude Code plugin marketplace for installing the Superpowers skill collections.",
+    "repo": "obra/superpowers-marketplace"
+  },
+  {
+    "name": "obra/superpowers-lab",
+    "url": "https://github.com/obra/superpowers-lab",
+    "category": "collections",
+    "desc": "Experimental Superpowers skills exploring new techniques for Claude Code.",
+    "repo": "obra/superpowers-lab"
+  },
+  {
+    "name": "trailofbits/skills",
+    "url": "https://github.com/trailofbits/skills",
+    "category": "collections",
+    "desc": "Trail of Bits' security-research skills for vulnerability detection and audit workflows, installable as a plugin marketplace.",
+    "repo": "trailofbits/skills"
+  },
+  {
+    "name": "getsentry/skills",
+    "url": "https://github.com/getsentry/skills",
+    "category": "collections",
+    "desc": "Sentry's official skills, including a skill-scanner for reviewing untrusted skills.",
+    "repo": "getsentry/skills"
+  },
+  {
+    "name": "distro-skills",
+    "url": "https://github.com/royalpinto007/distro-skills",
+    "category": "collections",
+    "desc": "26 Agent Skills that teach an agent to distribute a dev or indie product across GitHub, HN, Reddit, dev.to, and more.",
+    "repo": "royalpinto007/distro-skills"
+  },
+  {
+    "name": "AgentBody Skills",
+    "url": "https://github.com/agentbody/skills",
+    "category": "collections",
+    "desc": "AgentBody's public skills collection, including X Research for read-only public X/Twitter search, trends, profiles, posts, media, and replies. Requires a commercial AgentBody API key.",
+    "repo": "agentbody/skills"
+  },
+  {
+    "name": "AgentBody Skills",
+    "url": "https://github.com/agentbody/skills",
+    "category": "collections",
+    "desc": "AgentBody's public skills collection, including X Research for read-only public X/Twitter search, trends, profiles, posts, media, and replies. Requires a commercial AgentBody API key.",
+    "repo": "agentbody/skills"
+  },
+  {
+    "name": "NotFair Plugin",
+    "repo": "nowork-studio/notfair-plugin",
+    "url": "https://github.com/nowork-studio/notfair-plugin",
+    "category": "collections",
+    "desc": "Open-source SEO, GEO, paid-media, and analytics workflows for AI agents."
+  },
+  {
+    "name": "vostride/agent-qa skills",
+    "repo": "vostride/agent-qa",
+    "url": "https://github.com/vostride/agent-qa/tree/main/skills",
+    "category": "collections",
+    "desc": "Three Agent Skills for authoring QA tests, debugging failures, and triaging results in web and mobile app testing."
+  },
+  {
+    "name": "superpowers-developing-for-claude-code",
+    "url": "https://github.com/obra/superpowers-developing-for-claude-code",
+    "category": "coding",
+    "desc": "Skills that teach an agent to build for and extend Claude Code itself.",
+    "repo": "obra/superpowers-developing-for-claude-code"
+  },
+  {
+    "name": "borghei/Claude-Skills",
+    "url": "https://github.com/borghei/Claude-Skills",
+    "category": "coding",
+    "desc": "Engineering-focused skill collection including a skill-security-auditor for reviewing code and skills.",
+    "repo": "borghei/Claude-Skills"
+  },
+  {
+    "name": "orca-replay",
+    "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay",
+    "category": "coding",
+    "desc": "Teaches an agent to answer questions about an earlier run from its recording instead of from memory, and to replay or fork that run, for developers debugging why a past session did what it did.",
+    "repo": "Continuum-AI-Corp/OrcaReplay"
+  },
+  {
+    "name": "cloudish",
+    "url": "https://github.com/cloudishai/skills/tree/main/skills/cloudish",
+    "category": "coding",
+    "desc": "Teaches an agent to deploy a Dockerfile, source folder, or container image to Cloudish and report the live URL, minting its own API key with no signup, for developers who want their agent to put an app, API, or bot online.",
+    "repo": "cloudishai/skills"
+  },
+  {
+    "name": "anthropics/skills, docx",
+    "url": "https://github.com/anthropics/skills/tree/main/skills/docx",
+    "category": "docs",
+    "desc": "The production Word-document skill that powers Claude's docx creation and editing."
+  },
+  {
+    "name": "anthropics/skills, document skills",
+    "url": "https://github.com/anthropics/skills/tree/main/skills",
+    "category": "docs",
+    "desc": "Source-available PDF, PowerPoint, and Excel skills used in production by Claude."
+  },
+  {
+    "name": "Snyk: ToxicSkills study",
+    "url": "https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/",
+    "category": "security",
+    "desc": "Research finding prompt injection in 36 percent of tested skills and 1,467 malicious payloads across the skill supply chain."
+  },
+  {
+    "name": "Trail of Bits: skill distribution",
+    "url": "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/",
+    "category": "security",
+    "desc": "Shows every public skill scanner (ClawHub, Cisco skill-scanner, skills.sh) is bypassable in under an hour."
+  },
+  {
+    "name": "OWASP Agentic Skills Top 10",
+    "url": "https://owasp.org/www-project-agentic-skills-top-10/",
+    "category": "security",
+    "desc": "OWASP project cataloguing the top security risks specific to agent skills."
+  },
+  {
+    "name": "Sentry skill-scanner",
+    "url": "https://github.com/getsentry/skills/blob/main/skills/skill-scanner/SKILL.md",
+    "category": "security",
+    "desc": "A skill that scans other skills for prompt injection, exfiltration, and dangerous code before install."
+  },
+  {
+    "name": "skill-audit",
+    "url": "https://github.com/royalpinto007/Skill-audit",
+    "category": "security",
+    "desc": "Security scanner for agent skills: 31 rules, prompt-injection and exfiltration detection, SARIF output, npx skill-audit.",
+    "repo": "royalpinto007/Skill-audit"
+  },
+  {
+    "name": "SecHelix",
+    "repo": "omarmohelal/SecHelix",
+    "url": "https://github.com/omarmohelal/SecHelix",
+    "category": "security",
+    "desc": "Evidence-first AppSec review skill that sends every candidate finding to an independent verifier before reporting it, for developers auditing code they are authorized to test."
+  },
+  {
+    "name": "skill-creator (Anthropic)",
+    "url": "https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md",
+    "category": "authoring",
+    "desc": "Official meta-skill that interviews you, writes a SKILL.md with good trigger descriptions, and packages a skill bundle."
+  },
+  {
+    "name": "ComposioHQ skill-creator",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/skill-creator/SKILL.md",
+    "category": "authoring",
+    "desc": "Modular authoring framework for designing, refactoring, and packaging skills with progressive disclosure."
+  },
+  {
+    "name": "skillsbench",
+    "url": "https://deepwiki.com/benchflow-ai/skillsbench",
+    "category": "authoring",
+    "desc": "Benchmark plus skill creation and validation tooling for evaluating skill quality."
+  },
+  {
+    "name": "claudemarketplaces.com",
+    "url": "https://claudemarketplaces.com/",
+    "category": "market",
+    "desc": "Directory of Claude Code skills, plugins, and MCP servers with thousands of registered marketplaces."
+  },
+  {
+    "name": "LobeHub Skills",
+    "url": "https://lobehub.com/skills",
+    "category": "market",
+    "desc": "Cross-agent skills marketplace (Claude Code, Codex CLI, ChatGPT) built on the open SKILL.md format."
+  },
+  {
+    "name": "agentskill.sh",
+    "url": "https://agentskill.sh/",
+    "category": "market",
+    "desc": "Skills directory with one-command install across Claude Code, Cursor, Copilot, Codex, Windsurf, Zed, and more."
+  },
+  {
+    "name": "Simon Willison: skills",
+    "url": "https://simonwillison.net/tags/skills/",
+    "category": "guides",
+    "desc": "Ongoing practitioner commentary and worked examples on building and using Agent Skills."
+  },
+  {
+    "name": "Anthropic Skills explained",
+    "url": "https://localskills.sh/blog/anthropic-skills-explained",
+    "category": "guides",
+    "desc": "Explainer walking through the official repo, the docs, and how the format works."
+  },
+  {
+    "name": "VoltAgent/awesome-agent-skills",
+    "url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "category": "related",
+    "desc": "The largest list by reach: 1,400-plus hand-picked skills from real engineering teams, cross-tool.",
+    "repo": "VoltAgent/awesome-agent-skills"
+  },
+  {
+    "name": "ComposioHQ/awesome-claude-skills",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "category": "related",
+    "desc": "1,000-plus production skills and plugins organized by use case, with a skill-creator bundled in-repo.",
+    "repo": "ComposioHQ/awesome-claude-skills"
+  },
+  {
+    "name": "karanb192/awesome-claude-skills",
+    "url": "https://github.com/karanb192/awesome-claude-skills",
+    "category": "related",
+    "desc": "50-plus verified skills across 12 categories, actively maintained with verified badges.",
+    "repo": "karanb192/awesome-claude-skills"
+  },
+  {
+    "name": "BulkPublish social media content skills",
+    "url": "https://github.com/azeemkafridi/bulkpublish-api/tree/main/skills/social-media-content-skills",
+    "category": "market",
+    "desc": "Open-source skills for approval-first social content adaptation, scheduling, and publishing through BulkPublish API and MCP.",
+    "repo": "azeemkafridi/bulkpublish-api"
+  },
+  {
+    "name": "OrkasVideoStudio",
+    "repo": "Orkas-AI/Orkas-VideoStudio",
+    "url": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+    "category": "collections",
+    "desc": "MIT-licensed, local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, generate, and assemble videos from editable plan.json timelines."
+  },
+  {
+    "name": "Hyperconsciousness skills",
+    "repo": "louis030195/hyperconsciousness",
+    "url": "https://github.com/louis030195/hyperconsciousness/tree/main/skills",
+    "category": "collections",
+    "desc": "Developer-alpha skills for local knowledge discovery and grant-scoped encrypted store operations, with installation support for Claude Code, Codex, Hermes and pi."
+  },
+  {
+    "name": "alapha888/agent-skills-en",
+    "url": "https://github.com/alapha888/agent-skills-en",
+    "category": "collections",
+    "desc": "Five MIT-licensed productivity skills for AI coding agents: meeting notes, code review checklist, deep research framework, tech writing proofread, and git commit messages.",
+    "repo": "alapha888/agent-skills-en"
+  },
+  {
+    "name": "LogNorm",
+    "url": "https://github.com/lognorm/lognorm-mcp/tree/main/skills/lognorm",
+    "category": "collections",
+    "desc": "Work a site's SEO and AI-visibility (GEO) backlog through the hosted LogNorm MCP server: audits, fixes, content, AI-answer tracking. Needs a LogNorm account (free plan available).",
+    "repo": "lognorm/lognorm-mcp"
+  },
+  {
+    "name": "Darkmoon pentest skill",
+    "url": "https://github.com/ASCIT31/darkmoon-mcp-server/tree/main/plugins/darkmoon/skills/darkmoon-pentest",
+    "category": "collections",
+    "desc": "Skill and MCP plugin to start authorized autonomous AI pentest runs on your own self-hosted Darkmoon Pro, poll them and triage findings. Needs a Darkmoon Pro dashboard; the open source (GPL-3.0) engine alone is not enough.",
+    "repo": "ASCIT31/darkmoon-mcp-server"
+  },
+  {
+    "name": "Publish with Shipvela",
+    "repo": "stefanautomateed/shipvela-codex",
+    "url": "https://github.com/stefanautomateed/shipvela-codex/tree/main/skills/shipvela-publish",
+    "category": "coding",
+    "desc": "MIT publishing skill for static websites through Shipvela's hosted OAuth MCP service, with owner approval, deployment tracking and build logs; requires an account with a free tier.",
+    "name": "reverse-engineer-anything (REA)",
+    "repo": "morluto/rea",
+    "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
+    "category": "coding",
+    "desc": "Investigate shipped binaries and JavaScript/Electron apps with REA CLI/MCP evidence; install REA separately and bring Hopper, Ghidra, or IDA for deep native analysis.",
+    "name": "Solaris Dev Shop",
+    "repo": "Shaisolaris/solaris-dev-shop",
+    "url": "https://github.com/Shaisolaris/solaris-dev-shop",
+    "category": "collections",
+    "desc": "Free MIT skill library whose chief of staff assigns one specialist to a task."
+  },
+  {
+    "name": "looot-skills",
+    "repo": "loootai/looot-skills",
+    "url": "https://github.com/loootai/looot-skills",
+    "category": "collections",
+    "desc": "20 business-data skills (email finding, company and people enrichment, web search, local leads) plus a base skill, backed by the hosted looot MCP server. Needs a looot API key and prepaid balance."
+  }
+]
