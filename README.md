@@ -418,6 +418,8 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
 | **looot Skills** | https://github.com/loootai/looot-skills | 21 Agent Skills for data API jobs (find work emails, enrich a company, Google results, keyword volume) that price each call first and run it on one prepaid balance |
 
+| **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
+
 <a id="application-scenarios"></a>
 
 ## 🚀 Application Scenarios
