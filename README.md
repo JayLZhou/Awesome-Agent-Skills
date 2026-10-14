@@ -1,453 +1,104 @@
-<h1 align="center">🌟 Awesome Agent Skills 🌟</h1>
-
-<p align="center">
-  <b>A curated paper list and resource hub for skill-centric LLM agent ecosystems.</b>
-</p>
-<p align="center">
-  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-  <a href="https://arxiv.org/abs/2605.07358"><img src="https://img.shields.io/badge/arXiv-2605.07358-b31b1b.svg?style=flat" alt="arXiv"></a>
-  <img src="https://img.shields.io/badge/Taxonomy-4%20Lifecycle%20Stages-6f42c1?style=flat" alt="Taxonomy">
-  <img src="https://img.shields.io/badge/Collected%20Papers-135-1f6feb?style=flat" alt="Collected Papers">
-  <img src="https://img.shields.io/badge/Updated-2026--07--26-2ea44f?style=flat" alt="Updated">
-</p>
-
-<p align="center">
-  <a href="#introduction">Introduction</a> ·
-  <a href="#taxonomy">Taxonomy</a> ·
-  <a href="#paper-list">Paper List</a> ·
-  <a href="#benchmarks-and-evaluation">Benchmarks</a> ·
-  <a href="#ecosystem-platforms-and-resources">Resources</a> ·
-  <a href="#citation">Citation</a>
-</p>
-
-> [!NOTE]
-> This repository accompanies our survey, **A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications**.
->
-> We collect papers, benchmarks, platforms, and ecosystem resources for understanding how reusable agent skills are represented, acquired, retrieved, selected, evolved, and governed.
->
-> If this repository is useful for your work, please consider starring it and citing the survey.
-
-```bibtex
-@article{zhou2026comprehensive,
-  title   = {A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications},
-  author  = {Zhou, Yingli and Wang, Shu and Su, Yaodong and Du, Wenchuan and Fang, Yixiang and Lin, Xuemin},
-  journal = {arXiv preprint arXiv:2605.07358},
-  year    = {2026}
-}
-```
-
-<a id="contents"></a>
-
-## 📚 Contents
-
-- [🎯 Introduction](#introduction)
-- [🧩 What Are Agent Skills?](#what-are-agent-skills)
-- [🕰️ Historical Evolution of Skills](#historical-evolution-of-skills)
-- [🗺️ Taxonomy](#taxonomy)
-- [📄 Related Surveys](#related-surveys)
-- [📑 Paper List](#paper-list)
-  - [0. Foundations: Tools, Protocols, Retrieval, Memory](#0-foundations-tools-protocols-retrieval-memory)
-  - [1. Skill Representation](#1-skill-representation)
-  - [2. Skill Acquisition](#2-skill-acquisition)
-  - [3. Skill Retrieval and Selection](#3-skill-retrieval-and-selection)
-  - [4. Skill Evolution and Governance](#4-skill-evolution-and-governance)
-- [🧪 Benchmarks and Evaluation](#benchmarks-and-evaluation)
-- [🛠️ Ecosystem Platforms and Resources](#ecosystem-platforms-and-resources)
-- [🚀 Application Scenarios](#application-scenarios)
-- [💡 Research Opportunities](#research-opportunities)
-- [🤝 Contributing](#contributing)
-- [✍️ Citation](#citation)
-
-<a id="introduction"></a>
-
-## 🎯 Introduction
-
-LLM-based agents are moving from passive response generation toward action-oriented task execution. They can call tools, retrieve memories, operate APIs, write code, and interact with external environments. However, tool access alone does not solve the harder procedural question: **when should a capability be invoked, how should multiple steps be coordinated, how should failures be handled, and how should outputs be validated?**
-
-Our survey frames this bottleneck as the **procedural gap**. Agent skills address it by packaging reusable task-focused know-how into durable artifacts. Under this view, agents handle high-level intent interpretation, reasoning, and planning, while skills form the operational layer that makes execution reusable, inspectable, composable, and governable.
-
-This repository tracks the emerging research landscape around agent skills, including:
-
-- Representative papers across the agent-skill lifecycle.
-- Benchmarks and evaluation protocols for skill-centric agents.
-- Platforms and repositories for discovering, sharing, and governing skills.
-- Application scenarios where reusable skills are becoming central to agent performance.
-
-<p align="center">
-  <img src="./assets/2_number_of_papers.png" width="92%" alt="Growth of agent skills research papers">
-  <br>
-  <sub>Growth of representative research on agent skills from April 2023 to April 2026.</sub>
-</p>
-
-<a id="what-are-agent-skills"></a>
-
-## 🧩 What Are Agent Skills?
-
-In the survey, an **agent skill** is defined as a reusable procedural artifact with bounded scope. It externalizes task-focused know-how: not only what can be done, but also when to act, how to execute, what heuristics and failure modes matter, and how to judge completion.
-
-Formally, a skill can be modeled as:
-
-```text
-S = (M, R, C)
-```
-
-| Component | Meaning | Examples |
-|:--|:--|:--|
-| `M` | Main instruction document | A `SKILL.md`, SOP, checklist, or workflow prompt |
-| `R` | Auxiliary resources | References, templates, helper scripts, notebooks, schemas |
-| `C` | Applicability conditions | Trigger descriptions, metadata, dependencies, embeddings |
-
-Compared with raw tools, skills package the **how-to layer** around capability use. Compared with plain memory, skills are intended to be retrieved, executed, revised, and governed as reusable operational units.
-
-<a id="historical-evolution-of-skills"></a>
-
-## 🕰️ Historical Evolution of Skills
-
-<p align="center">
-  <img src="./assets/1_history.png" width="96%" alt="Historical evolution of skills">
-</p>
-<a id="taxonomy"></a>
-
-## 🗺️ Taxonomy
-
-We organize the literature around the **agent-skill lifecycle**, following the survey's taxonomy.
-
-| Lifecycle Stage | Core Question | Representative Topics |
-|:--|:--|:--|
-| **Skill Representation** | How is procedural know-how packaged? | Text-backed skills, code-backed skills, hybrid skills |
-| **Skill Acquisition** | Where do skills come from? | Human-derived, experience-derived, task-derived, corpus-derived acquisition |
-| **Skill Retrieval & Selection** | How does an agent choose the right skill at the right time? | Dense/sparse retrieval, generative retrieval, hierarchy/graph retrieval, context-aware routing, composition |
-| **Skill Evolution** | How do skills improve safely over time? | Revision, validation, policy coupling, repository evolution, trust, rollback, deprecation |
-
-At a high level, skill-centric agent systems turn transient agent behavior into persistent capabilities:
-
-```text
-experience / expertise / corpus / task
-        ↓
-skill acquisition
-        ↓
-skill representation
-        ↓
-retrieval + selection
-        ↓
-execution
-        ↓
-feedback, validation, evolution, governance
-```
-
-<a id="related-surveys"></a>
-
-## 📄 Related Surveys
-
-- (OpenReview 2026) *A Survey on Agent Skills: Externalized Procedural Knowledge in Language Models* [[Paper](https://openreview.net/forum?id=S184SW2SPX)]
-- (Preprints 2026) *A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents* [[Paper](https://www.preprints.org/manuscript/202605.1276)]
-- (arXiv 2026) *Agent Skill Evaluation and Evolution: Frameworks and Benchmarks* [[Paper](https://arxiv.org/abs/2606.11435)]
-- (TechRxiv 2026) *A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution* [[Paper](https://www.techrxiv.org/doi/abs/10.36227/techrxiv.177203250.05832634/v2)]
-- (arXiv 2026) *Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering* [[Paper](https://arxiv.org/abs/2604.08224)]
-- (arXiv 2026) *SoK: Agentic Skills -- Beyond Tool Use in LLM Agents* [[Paper](https://arxiv.org/abs/2602.20867)]
-
-<a id="paper-list"></a>
-
-## 📑 Paper List
-
-### 0. Foundations: Tools, Protocols, Retrieval, Memory
-
-These works provide the infrastructure layer for agent skills: tool use, protocol-based capability access, retrieval, memory, and agentic execution loops.
-
-- (NeurIPS 2023) *Toolformer* [[Paper](https://arxiv.org/abs/2302.04761)]
-- (ICLR 2023) *ReAct* [[Paper](https://arxiv.org/abs/2210.03629)]
-- (arXiv 2023) *HuggingGPT* [[Paper](https://arxiv.org/abs/2303.17580)]
-- (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
-- (Anthropic 2024) *Model Context Protocol (MCP)* [[Paper](https://www.anthropic.com/news/model-context-protocol)]
-- (OpenAI 2023) *Function Calling* [[Paper](https://openai.com/blog/function-calling-and-other-api-updates)]
-- (NeurIPS 2020) *RAG* [[Paper](https://arxiv.org/abs/2005.11401)]
-- (EMNLP 2020) *DPR* [[Paper](https://aclanthology.org/2020.emnlp-main.550/)]
-- (arXiv 2025) *In-depth Analysis of Graph-based RAG in a Unified Framework* [[Paper](https://arxiv.org/abs/2503.04338)]
-- (arXiv 2025) *ArchRAG: Attributed Community-based Hierarchical Retrieval-Augmented Generation* [[Paper](https://arxiv.org/abs/2502.09891)]
-- (arXiv 2025) *Clue-RAG* [[Paper](https://arxiv.org/abs/2507.08445)]
-- (arXiv 2025) *BookRAG: A Hierarchical Structure-aware Index-based Approach for RAG on Complex Documents* [[Paper](https://arxiv.org/abs/2512.03413)]
-- (arXiv 2025) *EraRAG* [[Paper](https://arxiv.org/abs/2506.20963)]
-- (arXiv 2023) *MemGPT* [[Paper](https://arxiv.org/abs/2310.08560)]
-- (arXiv 2023) *Think-in-Memory* [[Paper](https://arxiv.org/abs/2311.08719)]
-- (arXiv 2026) *EverMemOS* [[Paper](https://arxiv.org/abs/2601.02163)]
-- (arXiv 2026) *HyperMem* [[Paper](https://arxiv.org/abs/2604.08256)]
-- (arXiv 2026) *MSA* [[Paper](https://arxiv.org/abs/2603.23516)]
-
-### 1. Skill Representation
-
-Skill representation studies how reusable procedural artifacts are packaged for agents to load, inspect, execute, and maintain.
-
-#### Text-Based Skills
-
-- (NeurIPS 2023) *Reflexion* [[Paper](https://arxiv.org/abs/2303.11366)]
-- (AAAI 2024) *ExpeL* [[Paper](https://arxiv.org/abs/2308.10144)]
-- (NeurIPS 2024) *Buffer of Thoughts* [[Paper](https://arxiv.org/abs/2406.04271)]
-- (arXiv 2026) *Trace2Skill* [[Paper](https://arxiv.org/abs/2603.25158)]
-- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
-- (arXiv 2026) *From Anatomy to Smells: An Empirical Study of SKILL.md in Agent Skills* [[Paper](https://arxiv.org/abs/2607.01456)]
-
-#### Code-Backed Skills
-
-- (NeurIPS 2023) *Voyager* [[Paper](https://arxiv.org/abs/2305.16291)]
-- (arXiv 2026) *SkillCraft* [[Paper](https://arxiv.org/abs/2603.00718)]
-- (ICLR 2026) *PolySkill* [[Paper](https://arxiv.org/abs/2510.15863)]
-- (arXiv 2025) *Inducing Programmatic Skills for Agentic Tasks* [[Paper](https://arxiv.org/abs/2504.06821)]
-- (arXiv 2026) *Harnessing LLM Agents with Skill Programs* [[Paper](https://arxiv.org/abs/2605.17734)]
-- (arXiv 2026) *Skill-as-Pseudocode* [[Paper](https://arxiv.org/abs/2605.27955)]
-
-#### Hybrid Skills
-
-- (TPAMI 2025) *JARVIS-1* [[Paper](https://arxiv.org/abs/2311.05997)]
-- (ICLR 2024) *Synapse* [[Paper](https://arxiv.org/abs/2306.07863)]
-- (arXiv 2025) *SkillWeaver* [[Paper](https://arxiv.org/abs/2504.07079)]
-- (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
-- (arXiv 2026) *Agent Skills Should Go Beyond Text: The Case for Visual Skills* [[Paper](https://arxiv.org/abs/2606.01414)]
-- (arXiv 2026) *Skill-RM* [[Paper](https://arxiv.org/abs/2606.03980)]
-- (arXiv 2026) *AIP* [[Paper](https://arxiv.org/abs/2606.04781)]
-
-### 2. Skill Acquisition
-
-Skill acquisition studies how new skills are constructed from human expertise, agent experience, task demands, or external corpora.
-
-<p align="center">
-  <img src="./assets/4_skill_acquisition.png" width="96%" alt="Overview of skill acquisition methods">
-  <br>
-  <sub>Overview of skill acquisition routes: human-derived, experience-derived, task-derived, and corpus-derived skills.</sub>
-</p>
-
-#### Human-Derived
-
-- (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
-- (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
-- (arXiv 2026) *SoK: Agentic Skills* [[Paper](https://arxiv.org/abs/2602.20867)]
-- (arXiv 2024) *Agent Hospital* [[Paper](https://arxiv.org/abs/2405.02957)]
-- (arXiv 2026) *SciVisAgentSkills* [[Paper](https://arxiv.org/abs/2606.05525)]
-
-#### Experience-Derived
-
-- (NeurIPS 2023) *Voyager* [[Paper](https://arxiv.org/abs/2305.16291)]
-- (NeurIPS 2023) *Reflexion* [[Paper](https://arxiv.org/abs/2303.11366)]
-- (AAAI 2024) *ExpeL* [[Paper](https://arxiv.org/abs/2308.10144)]
-- (NeurIPS 2024) *Buffer of Thoughts* [[Paper](https://arxiv.org/abs/2406.04271)]
-- (arXiv 2026) *Trace2Skill* [[Paper](https://arxiv.org/abs/2603.25158)]
-- (ICML 2025) *Agent Workflow Memory* [[Paper](https://arxiv.org/abs/2409.07429)]
-- (arXiv 2025) *AgentEvolver* [[Paper](https://arxiv.org/abs/2511.10395)]
-- (arXiv 2025) *G-memory* [[Paper](https://arxiv.org/abs/2506.07398)]
-- (arXiv 2025) *Nemori* [[Paper](https://arxiv.org/abs/2502.14828)]
-- (arXiv 2026) *PANDO* [[Paper](https://arxiv.org/abs/2605.24785)]
-- (arXiv 2026) *SkillGen: Verified Inference-Time Agent Skill Synthesis* [[Paper](https://arxiv.org/abs/2605.10999)]
-
-#### Task-Derived
-
-- (Findings EMNLP 2023) *CREATOR* [[Paper](https://aclanthology.org/2023.findings-emnlp.462/)]
-- (ICLR 2024) *ToolMakers* [[Paper](https://arxiv.org/abs/2305.17126)]
-- (arXiv 2024) *Cradle* [[Paper](https://arxiv.org/abs/2403.03186)]
-- (arXiv 2024) *CodeAct* [[Paper](https://arxiv.org/abs/2402.01030)]
-
-#### Corpus-Derived
-
-- (arXiv 2023) *AppAgent* [[Paper](https://arxiv.org/abs/2312.13771)]
-- (arXiv 2024) *AutoGuide* [[Paper](https://arxiv.org/abs/2403.08978)]
-- (arXiv 2023) *HuggingGPT* [[Paper](https://arxiv.org/abs/2303.17580)]
-- (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
-- (arXiv 2024) *DS-Agent* [[Paper](https://arxiv.org/abs/2402.17453)]
-- (arXiv 2026) *OpenSkill: Open-World Self-Evolution for LLM Agents* [[Paper](https://arxiv.org/abs/2606.06741)]
-- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
-
-### 3. Skill Retrieval and Selection
-
-Skill retrieval and selection ask how agents surface the right skill from a growing library, then decide whether to invoke, compose, or revise that skill under the current task state and budget.
-
-<p align="center">
-  <img src="./assets/5_skill_retrieval_and_selection.png" width="96%" alt="Skill retrieval and selection pipeline">
-  <br>
-  <sub>Skill retrieval narrows the candidate space; skill selection decides what to execute, compose, or adapt.</sub>
-</p>
-
-#### Retrieval
-
-- (ICLR 2025) *ToolGen: Unified Tool Retrieval and Calling via Generation* [[Paper](https://arxiv.org/abs/2410.03439)]
-- (arXiv 2023) *ToolLLM* [[Paper](https://arxiv.org/abs/2307.16789)]
-- (arXiv 2026) *AgentSkillOS* [[Paper](https://arxiv.org/abs/2603.02176)]
-- (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
-- (arXiv 2026) *GraphSkill* [[Paper](https://arxiv.org/abs/2603.06620)]
-- (arXiv 2026) *Skill Is Not Document* [[Paper](https://arxiv.org/abs/2606.03565)]
-- (arXiv 2026) *SkillDAG* [[Paper](https://arxiv.org/abs/2606.03056)]
-
-#### Selection and Routing
-
-- (arXiv 2024) *AutoGuide* [[Paper](https://arxiv.org/abs/2403.08978)]
-- (arXiv 2026) *MemSkill* [[Paper](https://arxiv.org/abs/2602.02474)]
-- (arXiv 2026) *Memento-Skills* [[Paper](https://arxiv.org/abs/2603.18743)]
-- (arXiv 2026) *SkillRouter* [[Paper](https://arxiv.org/abs/2603.22455)]
-- (arXiv 2026) *GraSP* [[Paper](https://arxiv.org/abs/2604.17870)]
-- (Findings ACL 2025) *ToolExpNet* [[Paper](https://aclanthology.org/2025.findings-acl.811/)]
-- (arXiv 2026) *Maestro* [[Paper](https://arxiv.org/abs/2605.22177)]
-- (arXiv 2026) *Skill is Not One-Size-Fits-All* [[Paper](https://arxiv.org/abs/2605.30723)]
-- (arXiv 2026) *Skill or Skip? Learning Selective Skill Invocation in Agentic Tasks via Dual-Granularity Preference Learning* [[Paper](https://arxiv.org/abs/2606.00510)]
-- (arXiv 2026) *SkillsInjector* [[Paper](https://arxiv.org/abs/2605.29794)]
-
-### 4. Skill Evolution and Governance
-
-Skill evolution studies how skills are revised, validated, optimized, synchronized, deprecated, and governed after deployment.
-
-<p align="center">
-  <img src="./assets/6_skill_evolution.png" width="96%" alt="Skill evolution workflow">
-  <br>
-  <sub>Skill evolution turns feedback, failures, validation, and governance signals into safer reusable capabilities.</sub>
-</p>
-
-#### Skill Formation, Refinement, and RL Optimization
-
-- (arXiv 2024) *TROVE* [[Paper](https://arxiv.org/abs/2401.12869)]
-- (arXiv 2026) *Memento-Skills* [[Paper](https://arxiv.org/abs/2603.18743)]
-- (arXiv 2026) *AutoSkill* [[Paper](https://arxiv.org/abs/2603.01145)]
-- (arXiv 2026) *EvoSkill* [[Paper](https://arxiv.org/abs/2603.02766)]
-- (arXiv 2026) *CoEvoSkills* [[Paper](https://arxiv.org/abs/2604.01687)]
-- (arXiv 2026) *Ctx2Skill* [[Paper](https://arxiv.org/abs/2604.27660)] [[Code](https://github.com/S1s-Z/Ctx2Skill)]
-- (arXiv 2026) *AutoRefine* [[Paper](https://arxiv.org/abs/2601.22758)]
-- (arXiv 2026) *SkillRL* [[Paper](https://arxiv.org/abs/2602.08234)]
-- (arXiv 2026) *Uni-Skill* [[Paper](https://arxiv.org/abs/2603.02623)]
-- (arXiv 2026) *ARISE* [[Paper](https://arxiv.org/abs/2603.16060)]
-- (arXiv 2025) *CASCADE* [[Paper](https://arxiv.org/abs/2512.23880)]
-- (arXiv 2026) *SkillOpt* [[Paper](https://arxiv.org/abs/2605.23904)]
-- (arXiv 2026) *MUSE-Autoskill* [[Paper](https://arxiv.org/abs/2605.27366)]
-- (arXiv 2026) *SkillRevise* [[Paper](https://arxiv.org/abs/2606.01139)]
-- (arXiv 2026) *SkillSmith* [[Paper](https://arxiv.org/abs/2606.01314)]
-- (arXiv 2026) *ReSkill* [[Paper](https://arxiv.org/abs/2606.01619)]
-- (arXiv 2026) *SkillComposer* [[Paper](https://arxiv.org/abs/2606.06079)]
-- (arXiv 2026) *SkillMaster: Toward Autonomous Skill Mastery in LLM Agents* [[Paper](https://arxiv.org/abs/2605.08693)]
-- (arXiv 2026) *SkillMAS: Skill Co-Evolution with LLM-based Multi-Agent System* [[Paper](https://arxiv.org/abs/2605.09341)]
-- (arXiv 2026) *COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows* [[Paper](https://arxiv.org/abs/2607.01709)]
-- (arXiv 2026) *MOCHA* [[Paper](https://arxiv.org/abs/2605.19330)]
-- (arXiv 2026) *SkillGrad* [[Paper](https://arxiv.org/abs/2605.27760)]
-- (arXiv 2026) *You Live More Than Once: Towards Hierarchical Skill Meta-Evolving* [[Paper](https://arxiv.org/abs/2605.28390)]
-- (arXiv 2026) *GRASP* [[Paper](https://arxiv.org/abs/2605.29668)]
-- (arXiv 2026) *FederatedSkill* [[Paper](https://arxiv.org/abs/2606.03143)]
-- (arXiv 2026) *Bayesian-Agent* [[Paper](https://arxiv.org/abs/2606.08348)]
-- (arXiv 2026) *SkillHone* [[Paper](https://arxiv.org/abs/2606.08671)]
-- (arXiv 2026) *SKILL0* [[Paper](https://arxiv.org/abs/2604.02268)]
-- (arXiv 2026) *Skill1* [[Paper](https://arxiv.org/abs/2605.06130)]
-- (arXiv 2026) *Skill0.5* [[Paper](https://arxiv.org/abs/2605.28424)]
-
-#### Memory-Centric and Runtime Re-entry
-
-- (arXiv 2025) *ReasoningBank* [[Paper](https://arxiv.org/abs/2509.25140)]
-- (arXiv 2026) *MemRL* [[Paper](https://arxiv.org/abs/2601.03192)]
-- (arXiv 2026) *MemSkill* [[Paper](https://arxiv.org/abs/2602.02474)]
-- (arXiv 2025) *MemEvolve* [[Paper](https://arxiv.org/abs/2512.18746)]
-
-#### Governance, Trust, and Ecosystem Risk
-
-- (arXiv 2026) *SkillRouter* [[Paper](https://arxiv.org/abs/2603.22455)]
-- (arXiv 2026) *SkillNet* [[Paper](https://arxiv.org/abs/2603.04448)]
-- (Preprints 2026) *SkillOS* [[Paper](https://www.preprints.org/manuscript/202602.1096/v1)]
-- (arXiv 2025) *Audited Skill-Graph* [[Paper](https://arxiv.org/abs/2512.23760)]
-- (Zenodo 2026) *PoisonedSkills* [[Paper](https://doi.org/10.5281/zenodo.19281322)]
-- (arXiv 2026) *Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality* [[Paper](https://arxiv.org/abs/2602.08004)]
-- (arXiv 2026) *Towards Secure Agent Skills: Architecture, Threat Taxonomy, and Security Analysis* [[Paper](https://arxiv.org/abs/2604.02837)]
-- (arXiv 2026) *SkillsVote* [[Paper](https://arxiv.org/abs/2605.18401)]
-- (arXiv 2026) *Library Drift* [[Paper](https://arxiv.org/abs/2605.19576)]
-- (arXiv 2026) *Harmless Yet Harmful* [[Paper](https://arxiv.org/abs/2605.29354)]
-- (arXiv 2026) *When Safe Skills Collide: Measuring Compositional Risk in Agent Skill Ecosystems* [[Paper](https://arxiv.org/abs/2606.00448)]
-- (arXiv 2026) *ClawHub Security Signals: When VirusTotal, Static Analysis, and SkillSpector Disagree* [[Paper](https://arxiv.org/abs/2606.01494)]
-- (arXiv 2026) *SkillHarm* [[Paper](https://arxiv.org/abs/2606.02540)]
-- (arXiv 2026) *SkillGuard* [[Paper](https://arxiv.org/abs/2606.03024)]
-- (arXiv 2026) *POISE* [[Paper](https://arxiv.org/abs/2606.07943)]
-- (arXiv 2026) *From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained* [[Paper](https://arxiv.org/abs/2607.00911)]
-- (arXiv 2026) *Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains* [[Paper](https://arxiv.org/abs/2607.01136)]
-
-<a id="benchmarks-and-evaluation"></a>
-
-## 🧪 Benchmarks and Evaluation
-
-Skill-centric evaluation should measure more than final task success. Important dimensions include retrieval quality, selection utility, execution robustness, cost, recovery, transfer, and long-term library health.
-
-- *AgentBench* [[Paper](https://arxiv.org/abs/2308.03688)]
-- *WebArena* [[Paper](https://arxiv.org/abs/2307.13854)]
-- *TaskBench* [[Paper](https://arxiv.org/abs/2311.18760)]
-- *STULIFE* [[Paper](https://arxiv.org/abs/2508.19005)]
-- *TRACE* [[Paper](https://arxiv.org/abs/2510.00415)]
-- *Evo-Memory* [[Paper](https://arxiv.org/abs/2511.20857)]
-- *SkillsBench* [[Paper](https://arxiv.org/abs/2602.12670)]
-- *SRA-Bench* [[Paper](https://arxiv.org/abs/2604.24594)] [[Code](https://github.com/oneal2000/SR-Agents)] [[Dataset](https://huggingface.co/datasets/WeihangSu/SRA-Bench)]
-- *R3-Skill* [[Paper](https://arxiv.org/abs/2606.03565)]
-- *SkillHarm* [[Paper](https://arxiv.org/abs/2606.02540)]
-- *MalSkillBench* [[Paper](https://arxiv.org/abs/2606.07131)]
-- *SkillGenBench* [[Paper](https://arxiv.org/abs/2605.18693)]
-- *SkillEvolBench* [[Paper](https://arxiv.org/abs/2605.24117)]
-- *From Raw Experience to Skill Consumption* [[Paper](https://arxiv.org/abs/2605.23899)]
-- *When Skills Don't Help* [[Paper](https://arxiv.org/abs/2605.20023)]
-- *More Skills, Worse Agents?* [[Paper](https://arxiv.org/abs/2605.24050)]
-- *Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems* [[Paper](https://arxiv.org/abs/2606.00925)]
-- *A Framework for Evaluating Agentic Skills at Scale* [[Paper](https://arxiv.org/abs/2606.17819)]
-- *SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use* [[Paper](https://arxiv.org/abs/2607.01874)]
-
-<a id="ecosystem-platforms-and-resources"></a>
-
-## 🛠️ Ecosystem Platforms and Resources
-
-<p align="center">
-  <img src="./assets/3_number_of_skills.png" width="92%" alt="Growth of human-derived agent skills">
-  <br>
-  <sub>Growth of human-derived skills in emerging agent-skill platforms.</sub>
-</p>
-
-| Platform | Link | Focus |
-|:--|:--|:--|
-| **SkillNet** | https://skillnet.openkg.cn/ | Large-scale skill repository and organization |
-| **ClawHub** | https://clawhub.ai/ | Agent skill sharing and discovery |
-| **SkillHub** | https://www.skillhub.club/ | Community skill resources |
-| **SkillsMP** | https://skillsmp.com/ | Marketplace-style skill ecosystem |
-| **Skills.sh** | https://skills.sh/ | Agent skill publishing and reuse |
-| **BulkPublish Social Media Content Skills** | https://github.com/azeemkafridi/bulkpublish-api/tree/main/skills/social-media-content-skills | Reusable planning, adaptation, review, scheduling, and publishing skills for AI agents, with BulkPublish API/MCP handoff |
-| **BrowserAct Skills** | https://github.com/browser-act/skills | Browser automation skills for AI agents with local Chrome reuse, isolated sessions, and human handoff |
-| **UIZZE** | https://uizze.com | Free MIT anti-ui-slop Skill with a no-account preview at https://uizze.com/mcp/preview; full UIZZE adds live reference search, validation, and audits across 800,000+ real web and iOS screens for Codex, Claude Code, Cursor, and other coding agents |
-| **Hermes Tweet** | https://github.com/Xquik-dev/hermes-tweet | Hermes Agent X/Twitter plugin with bundled skill metadata and safe-default social workflow execution |
-| **Markstream Skills** | https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills | Framework-specific skills for streaming Markdown across Vue, React, Svelte, Angular, Nuxt, Next.js, and Vue 2 |
-| **ax** | https://github.com/Necmttn/ax | Local telemetry graph for coding-agent sessions, skills, tools, and workflow recall |
-| **Tree Ring Memory** | https://github.com/TerminallyLazy/Tree-Ring-Memory | Local-first memory framework for coding agents with lifecycle-aware recall, evidence-backed promotion, forgetting, and a portable Agent Skill package |
-| **UnifAPI Skills** | https://github.com/unifapi-agent/skills | Public-data MCP and KOL pricing skill package for Codex and Claude-compatible agent workflows |
-| **RunAPI CLI Skill** | https://github.com/runapi-ai/cli-skill | Agent workflow skill for running RunAPI image, video, music/audio, and LLM model jobs from Codex and Claude-compatible agents |
-| **Orkas VideoStudio** | https://github.com/Orkas-AI/Orkas-VideoStudio | Source-installable video skills and MCP tools for Codex and Claude Code with editable timelines |
-| **Duvo Skills** | https://github.com/duvoai/skills | Public agent skills for grocery and retail operations execution; SOP writer, run debugger, and CLI driver across existing systems |
-| **Before You Build Skill** | https://github.com/bin1874/before-you-build-skill | Pre-build product and feature risk review skill for AI coding agents |
-| **shidi-skill** | https://github.com/IcyCreamDAS/shidi-skill | Bilingual scientific research workflow skill: multi-angle literature review with per-angle files, anchored experiment design with a caveat list, figures, paper reading; returns files plus a cross-verification brief. Zero deps, MIT |
-| **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
-| **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
-| **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
-| **looot Skills** | https://github.com/loootai/looot-skills | 21 Agent Skills for data API jobs (find work emails, enrich a company, Google results, keyword volume) that price each call first and run it on one prepaid balance |
-
-<a id="application-scenarios"></a>
-
-## 🚀 Application Scenarios
-
-<p align="center">
-  <img src="./assets/7_application.png" width="72%" alt="Application scenarios of agent skills">
-  <br>
-  <sub>Representative application scenarios where agent skills act as reusable operational units.</sub>
-</p>
-<a id="research-opportunities"></a>
-
-## 💡 Research Opportunities
-
-The survey highlights several open directions for future agent-skill research:
-
-- **Unified skill schema**: Common fields for scope, triggers, dependencies, versioning, resources, safety constraints, and provenance.
-- **Resource-aware optimization**: Jointly optimize retrieval, planning, execution, latency, tool cost, and risk.
-- **Library evolution under non-stationarity**: Handle API drift, changing task distributions, compatibility checks, rollback, and regression recovery.
-- **Multimodal and domain-specific benchmarks**: Evaluate skills in embodied, GUI, robotics, autonomous driving, UAV, healthcare, finance, and other constrained settings.
-- **Causality-driven skill diagnosis**: Attribute failures to retrieval mismatch, policy mis-selection, unsafe composition, stale dependencies, or tool malfunction.
-
-<a id="contributing"></a>
-
-## 🤝 Contributing
-
-Contributions are welcome. If you want to add a paper, benchmark, project, or platform, please include:
-
-1. Title
-2. Venue and year
-3. Link to paper, code, project, or website
-4. Suggested category in this taxonomy
-
-You can open an issue or submit a pull request directly.
+# Awesome Agent Skills [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A **small, verified, security-aware** list of Agent Skills (the [SKILL.md](https://agentskills.io/specification) format used by Claude Code, Cursor, Codex, and more), curated for trust, not a 1,400-skill dump.
+
+A skill is a folder with a SKILL.md that teaches an agent a workflow. The ecosystem exploded, and so did the risk: a skill is code the agent trusts, and Snyk found prompt injection in **36% of tested skills** while Trail of Bits showed the public scanners are bypassable in under an hour. Most lists optimize for count. This one optimizes for signal: the official sources, a tight set of genuinely useful skills, and a first-class security section the volume lists skip.
+
+**Browse and filter: [agent-skills.agentpostmortem.com](https://agent-skills.agentpostmortem.com)**
+
+## Start here: how to think about skills
+
+- **A skill is untrusted code** until you have read its SKILL.md and any scripts. Treat installing one like adding a dependency, or running a stranger's shell script.
+- **The trigger description is the security boundary.** The model loads a skill based on its description; a poisoned description is how injection gets in.
+- **Scan before you install.** Use a skill scanner (below), and prefer skills from teams you can name.
+- **Author for progressive disclosure.** A good skill keeps SKILL.md short and links out to details the agent pulls only when needed.
+
+**The one rule:** volume is not trust. A verified skill from a known team beats a hundred you have not read.
+
+<!-- LIST:START -->
+**48 entries**, auto-refreshed weekly. Star counts updated **2026-09-28**. Browse the filterable version at **[agent-skills.agentpostmortem.com](https://agent-skills.agentpostmortem.com)**.
+
+### Official and spec
+
+- [anthropics/skills](https://github.com/anthropics/skills) `* 178.8k`: Anthropic's official public repo: production document skills (docx, pdf, pptx, xlsx), a skill template, skill-creator, and the spec.
+- [agentskills/agentskills](https://github.com/agentskills/agentskills) `* 25.8k`: Specification and documentation repository for the open Agent Skills standard.
+- [Agent Skills Specification](https://agentskills.io/specification): The open, vendor-neutral standard for the SKILL.md format, adopted beyond Claude.
+- [Agent Skills overview (Claude docs)](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview): Official docs on what skills are, how discovery and loading works, and how to build them.
+- [Introducing Agent Skills (Anthropic)](https://claude.com/blog/skills): The launch announcement of Agent Skills as an open standard, plus the design deep-dive.
+- [Claude Skills gallery](https://claude.com/skills): Anthropic's official gallery of prebuilt skills (PowerPoint, Excel, Word, PDF, and more).
+
+### Skill collections
+
+- [obra/superpowers](https://github.com/obra/superpowers) `* 292.4k`: Jesse Vincent's agentic skills framework and methodology: a large library of composable skills, in Claude Code's official marketplace.
+- [trailofbits/skills](https://github.com/trailofbits/skills) `* 7.3k`: Trail of Bits' security-research skills for vulnerability detection and audit workflows, installable as a plugin marketplace.
+- [NotFair Plugin](https://github.com/nowork-studio/notfair-plugin) `* 3.9k`: Open-source SEO, GEO, paid-media, and analytics workflows for AI agents.
+- [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace) `* 1.3k`: Curated Claude Code plugin marketplace for installing the Superpowers skill collections.
+- [getsentry/skills](https://github.com/getsentry/skills) `* 1k`: Sentry's official skills, including a skill-scanner for reviewing untrusted skills.
+- [vostride/agent-qa skills](https://github.com/vostride/agent-qa/tree/main/skills) `* 889`: Three Agent Skills for authoring QA tests, debugging failures, and triaging results in web and mobile app testing.
+- [obra/superpowers-skills](https://github.com/obra/superpowers-skills) `* 748`: The community-editable skills library behind the Superpowers plugin.
+- [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) `* 496`: MIT-licensed, local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, generate, and assemble videos from editable plan.json timelines.
+- [obra/superpowers-lab](https://github.com/obra/superpowers-lab) `* 430`: Experimental Superpowers skills exploring new techniques for Claude Code.
+- [Hyperconsciousness skills](https://github.com/louis030195/hyperconsciousness/tree/main/skills) `* 2`: Developer-alpha skills for local knowledge discovery and grant-scoped encrypted store operations, with installation support for Claude Code, Codex, Hermes and pi.
+- [AgentBody Skills](https://github.com/agentbody/skills) `* 1`: AgentBody's public skills collection, including X Research for read-only public X/Twitter search, trends, profiles, posts, media, and replies. Requires a commercial AgentBody API key.
+- [AgentBody Skills](https://github.com/agentbody/skills) `* 1`: AgentBody's public skills collection, including X Research for read-only public X/Twitter search, trends, profiles, posts, media, and replies. Requires a commercial AgentBody API key.
+- [distro-skills](https://github.com/royalpinto007/distro-skills) `* 0`: 26 Agent Skills that teach an agent to distribute a dev or indie product across GitHub, HN, Reddit, dev.to, and more.
+- [alapha888/agent-skills-en](https://github.com/alapha888/agent-skills-en): Five MIT-licensed productivity skills for AI coding agents: meeting notes, code review checklist, deep research framework, tech writing proofread, and git commit messages.
+- [LogNorm](https://github.com/lognorm/lognorm-mcp/tree/main/skills/lognorm): Work a site's SEO and AI-visibility (GEO) backlog through the hosted LogNorm MCP server: audits, fixes, content, AI-answer tracking. Needs a LogNorm account (free plan available).
+- [Darkmoon pentest skill](https://github.com/ASCIT31/darkmoon-mcp-server/tree/main/plugins/darkmoon/skills/darkmoon-pentest): Skill and MCP plugin to start authorized autonomous AI pentest runs on your own self-hosted Darkmoon Pro, poll them and triage findings. Needs a Darkmoon Pro dashboard; the open source (GPL-3.0) engine alone is not enough.
+- [Solaris Dev Shop](https://github.com/Shaisolaris/solaris-dev-shop): Free MIT skill library whose chief of staff assigns one specialist to a task.
+- [looot-skills](https://github.com/loootai/looot-skills): 20 business-data skills (email finding, company and people enrichment, web search, local leads) plus a base skill, backed by the hosted looot MCP server. Needs a looot API key and prepaid balance.
+
+### Coding and review
+
+- [borghei/Claude-Skills](https://github.com/borghei/Claude-Skills) `* 848`: Engineering-focused skill collection including a skill-security-auditor for reviewing code and skills.
+- [superpowers-developing-for-claude-code](https://github.com/obra/superpowers-developing-for-claude-code) `* 142`: Skills that teach an agent to build for and extend Claude Code itself.
+- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay): Teaches an agent to answer questions about an earlier run from its recording instead of from memory, and to replay or fork that run, for developers debugging why a past session did what it did.
+- [cloudish](https://github.com/cloudishai/skills/tree/main/skills/cloudish): Teaches an agent to deploy a Dockerfile, source folder, or container image to Cloudish and report the live URL, minting its own API key with no signup, for developers who want their agent to put an app, API, or bot online.
+
+### Docs and writing
+
+- [anthropics/skills, docx](https://github.com/anthropics/skills/tree/main/skills/docx): The production Word-document skill that powers Claude's docx creation and editing.
+- [anthropics/skills, document skills](https://github.com/anthropics/skills/tree/main/skills): Source-available PDF, PowerPoint, and Excel skills used in production by Claude.
+
+### Security and validation
+
+- [skill-audit](https://github.com/royalpinto007/Skill-audit) `* 3`: Security scanner for agent skills: 31 rules, prompt-injection and exfiltration detection, SARIF output, npx skill-audit.
+- [SecHelix](https://github.com/omarmohelal/SecHelix) `* 1`: Evidence-first AppSec review skill that sends every candidate finding to an independent verifier before reporting it, for developers auditing code they are authorized to test.
+- [Snyk: ToxicSkills study](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/): Research finding prompt injection in 36 percent of tested skills and 1,467 malicious payloads across the skill supply chain.
+- [Trail of Bits: skill distribution](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/): Shows every public skill scanner (ClawHub, Cisco skill-scanner, skills.sh) is bypassable in under an hour.
+- [OWASP Agentic Skills Top 10](https://owasp.org/www-project-agentic-skills-top-10/): OWASP project cataloguing the top security risks specific to agent skills.
+- [Sentry skill-scanner](https://github.com/getsentry/skills/blob/main/skills/skill-scanner/SKILL.md): A skill that scans other skills for prompt injection, exfiltration, and dangerous code before install.
+
+### Authoring and validation
+
+- [skill-creator (Anthropic)](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md): Official meta-skill that interviews you, writes a SKILL.md with good trigger descriptions, and packages a skill bundle.
+- [ComposioHQ skill-creator](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/skill-creator/SKILL.md): Modular authoring framework for designing, refactoring, and packaging skills with progressive disclosure.
+- [skillsbench](https://deepwiki.com/benchflow-ai/skillsbench): Benchmark plus skill creation and validation tooling for evaluating skill quality.
+
+### Marketplaces and directories
+
+- [BulkPublish social media content skills](https://github.com/azeemkafridi/bulkpublish-api/tree/main/skills/social-media-content-skills) `* 1`: Open-source skills for approval-first social content adaptation, scheduling, and publishing through BulkPublish API and MCP.
+- [claudemarketplaces.com](https://claudemarketplaces.com/): Directory of Claude Code skills, plugins, and MCP servers with thousands of registered marketplaces.
+- [LobeHub Skills](https://lobehub.com/skills): Cross-agent skills marketplace (Claude Code, Codex CLI, ChatGPT) built on the open SKILL.md format.
+- [agentskill.sh](https://agentskill.sh/): Skills directory with one-command install across Claude Code, Cursor, Copilot, Codex, Windsurf, Zed, and more.
+
+### Guides
+
+- [Simon Willison: skills](https://simonwillison.net/tags/skills/): Ongoing practitioner commentary and worked examples on building and using Agent Skills.
+- [Anthropic Skills explained](https://localskills.sh/blog/anthropic-skills-explained): Explainer walking through the official repo, the docs, and how the format works.
+
+### Related lists
+
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) `* 75.8k`: 1,000-plus production skills and plugins organized by use case, with a skill-creator bundled in-repo.
+- [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) `* 35k`: The largest list by reach: 1,400-plus hand-picked skills from real engineering teams, cross-tool.
+- [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) `* 526`: 50-plus verified skills across 12 categories, actively maintained with verified badges.
+
+<!-- LIST:END -->
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Edit `data/tools.json`, run `node scripts/generate.mjs`, open a PR.
+
+## License
+
+[CC0 1.0](LICENSE) (public domain).
