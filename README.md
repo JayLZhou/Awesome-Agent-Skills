@@ -418,6 +418,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
+| **Openhook** | https://github.com/openhook-dev/openhook-inbox/tree/main/skills/openhook | Callback-testing skill for AI agents: create an inbox, wait for webhook events through MCP, verify the received payload, and clean up test resources |
 
 <a id="application-scenarios"></a>
 
