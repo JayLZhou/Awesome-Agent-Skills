@@ -416,6 +416,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **skillZs** | https://skillzs.dev/ | Agent Skills discovery, guides, and security resources |
 | **Agent Coordinator** | https://github.com/alanhoff/agent-coordinator | Per-user Codex skill that coordinates dependency-aware work inline or through optional specialists, records local state, reconciles uncertain work before retry, and reruns authored checks at closeout |
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
+| **Make Parts Now Skill** | https://github.com/makepartsnow/skills | Agent skill that exports CAD from a project and gets instant 3D printing and CNC machining quotes and checkout links from a US manufacturing service via REST API or MCP |
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 
