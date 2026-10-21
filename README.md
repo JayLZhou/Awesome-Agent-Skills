@@ -329,6 +329,7 @@ Skill evolution studies how skills are revised, validated, optimized, synchroniz
 - (arXiv 2026) *SKILL0* [[Paper](https://arxiv.org/abs/2604.02268)]
 - (arXiv 2026) *Skill1* [[Paper](https://arxiv.org/abs/2605.06130)]
 - (arXiv 2026) *Skill0.5* [[Paper](https://arxiv.org/abs/2605.28424)]
+- (Preprint 2026) *Skill Transfer* [[Paper](https://github.com/Yifan-Lan/Skill-Transfer/blob/main/paper/SKill_Transfer_preprint.pdf)] [[Code](https://github.com/Yifan-Lan/Skill-Transfer)]
 
 #### Memory-Centric and Runtime Re-entry
 
