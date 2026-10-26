@@ -286,6 +286,7 @@ Skill retrieval and selection ask how agents surface the right skill from a grow
 - (arXiv 2026) *Skill is Not One-Size-Fits-All* [[Paper](https://arxiv.org/abs/2605.30723)]
 - (arXiv 2026) *Skill or Skip? Learning Selective Skill Invocation in Agentic Tasks via Dual-Granularity Preference Learning* [[Paper](https://arxiv.org/abs/2606.00510)]
 - (arXiv 2026) *SkillsInjector* [[Paper](https://arxiv.org/abs/2605.29794)]
+- (arXiv 2026) *TabAgent: Distilling LLM Agent Components into Cheap Classifiers* [[Paper](https://arxiv.org/abs/2602.16429)] [[Code](https://github.com/dolev31/TabAgent)]
 
 ### 4. Skill Evolution and Governance
 
