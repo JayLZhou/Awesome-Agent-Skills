@@ -418,6 +418,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
+| **Cooper Email Skills** | https://github.com/cooper-email/cooper-email | Agent skills and Claude Code / Cursor plugin that give an agent its own email inbox: send, read, search, and wait for replies or verification codes over a hosted MCP server or HTTP API |
 
 <a id="application-scenarios"></a>
 
