@@ -419,6 +419,8 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 
+| **Solaris Dev Shop** | https://github.com/Shaisolaris/solaris-dev-shop | Free MIT skill library of 61 portable specialist skills. A deterministic Python router assigns one accountable specialist and does not call a model. |
+
 <a id="application-scenarios"></a>
 
 ## 🚀 Application Scenarios
