@@ -395,7 +395,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | Platform | Link | Focus |
 |:--|:--|:--|
-| **Birdview** | https://github.com/Qiuner/birdview | Puts architecture and constraints at the center of AI coding by making both reviewable before implementation, with source evidence and verification |
+| **Birdview** | https://github.com/Qiuner/birdview | Generate interactive architecture and constraint maps with source evidence, review planned changes, and record verification results |
 | **SkillNet** | https://skillnet.openkg.cn/ | Large-scale skill repository and organization |
 | **ClawHub** | https://clawhub.ai/ | Agent skill sharing and discovery |
 | **SkillHub** | https://www.skillhub.club/ | Community skill resources |
