@@ -418,6 +418,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Mnemoverse** | https://github.com/mnemoverse/mcp-memory-server | Hosted memory over MCP for coding agents: tell it a recalled memory helped or misled and it re-ranks what comes back next, and memory rooms are shared across accounts; ships the CC0 agent-memory-discipline skill for when to recall and when to save |
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
+| **deja-vu (`deja-search`)** | https://github.com/vshulcz/deja-vu | Local cross-harness session memory and retrieval skill (`npx skills add vshulcz/deja-vu@deja-search`), plus MCP server and CLI across Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and 44+ coding agents |
 
 <a id="application-scenarios"></a>
 
