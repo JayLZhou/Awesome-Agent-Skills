@@ -419,6 +419,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **start-a-business** | https://github.com/bragoatski/foundit-business-fees/tree/main/skills/start-a-business | Walks a person through starting and keeping a US LLC, corporation or nonprofit in any state, with each state's real filing fees, due dates and official links from an open CC BY 4.0 dataset. |
+| **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
 
 <a id="application-scenarios"></a>
 
