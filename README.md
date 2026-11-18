@@ -311,6 +311,7 @@ Skill evolution studies how skills are revised, validated, optimized, synchroniz
 - (arXiv 2026) *ARISE* [[Paper](https://arxiv.org/abs/2603.16060)]
 - (arXiv 2025) *CASCADE* [[Paper](https://arxiv.org/abs/2512.23880)]
 - (arXiv 2026) *SkillOpt* [[Paper](https://arxiv.org/abs/2605.23904)]
+- (arXiv 2026) *SKILL-KD: Contrastive Skill Distillation for LLM Agents* [[Paper](https://arxiv.org/abs/2607.28048)] [[Code](https://github.com/KhanCold/SKILL-KD)]
 - (arXiv 2026) *MUSE-Autoskill* [[Paper](https://arxiv.org/abs/2605.27366)]
 - (arXiv 2026) *SkillRevise* [[Paper](https://arxiv.org/abs/2606.01139)]
 - (arXiv 2026) *SkillSmith* [[Paper](https://arxiv.org/abs/2606.01314)]
