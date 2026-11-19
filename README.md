@@ -419,6 +419,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
+| **Equibles Research Skill** | https://github.com/daniel3303/stock-market-mcp-server/tree/master/skills/equibles-research | Stock-research skill for Claude Code, Codex and other MCP-capable agents: sourced numbers from SEC filings, financial statements, earnings call transcripts, insider trades, 13F holders, short interest and option chains through the Equibles MCP server |
 
 <a id="application-scenarios"></a>
 
