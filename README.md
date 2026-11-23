@@ -145,6 +145,7 @@ feedback, validation, evolution, governance
 - (TechRxiv 2026) *A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution* [[Paper](https://www.techrxiv.org/doi/abs/10.36227/techrxiv.177203250.05832634/v2)]
 - (arXiv 2026) *Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering* [[Paper](https://arxiv.org/abs/2604.08224)]
 - (arXiv 2026) *SoK: Agentic Skills -- Beyond Tool Use in LLM Agents* [[Paper](https://arxiv.org/abs/2602.20867)]
+- (SSRN 2026) *The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents* [[Paper](https://ssrn.com/abstract=7186738)]
 
 <a id="paper-list"></a>
 
