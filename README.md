@@ -40,6 +40,7 @@
 
 ## 📚 Contents
 
+- [Skool Community Scraper](https://github.com/GeminiGeorge22/publicrecords-skills/tree/main/skills/skool-communities) - Search Skool communities by keyword for members, price, rating, and daily growth.
 - [🎯 Introduction](#introduction)
 - [🧩 What Are Agent Skills?](#what-are-agent-skills)
 - [🕰️ Historical Evolution of Skills](#historical-evolution-of-skills)
