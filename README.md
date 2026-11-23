@@ -419,6 +419,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
+| **OmniForge Skills** | https://github.com/zColdWater/omniforge-skills | 40 zero-dependency MIT SKILL.md skills for Claude Code, Cursor, Codex, and Gemini CLI covering pre-launch web security (Supabase RLS, Next.js, client secret leaks), SPF/DKIM/DMARC email DNS, 78-TLD domain/USPTO checks, and /llms.txt AI search via free read-only APIs |
 
 <a id="application-scenarios"></a>
 
