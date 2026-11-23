@@ -420,6 +420,8 @@ Skill-centric evaluation should measure more than final task success. Important 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
 
+| **Signbee Skill** | https://github.com/signbee/skill | Document signing skill (`SKILL.md`), Cursor plugin (`signbee/cursor-plugin`), and MCP server (`signbee/mcp`) enabling AI agents to send Markdown or PDF agreements for two-party e-signing with SHA-256 tamper-evident certificates |
+
 <a id="application-scenarios"></a>
 
 ## 🚀 Application Scenarios
