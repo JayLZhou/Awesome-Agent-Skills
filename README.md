@@ -419,6 +419,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
+| **Camera Prompt QuickCheck** | https://github.com/287523023qq-hue/camera-prompt-quickcheck | MIT-licensed zero-API Python pre-flight linter & `SKILL.md` for Claude Code, Codex, Cursor, and Gemini CLI that audits AI video prompts (Runway, Kling, Sora, Veo) against six camera physics rules (`C01`–`C06`) in ~5ms, with a live browser playground |
 
 <a id="application-scenarios"></a>
 
