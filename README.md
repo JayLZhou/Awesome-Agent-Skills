@@ -419,6 +419,7 @@ Skill-centric evaluation should measure more than final task success. Important 
 
 | **Research Toolkit** | https://github.com/rrrrrredy/research-toolkit | Research methods, source and claim tracking, saved progress, and independent report review for AI agents; Skill with optional plugin and local MCP workflow tools |
 | **YouTube Transcript Skills** | https://github.com/tubeagentkit/youtube-transcript-skills | SKILL.md skills for Claude Code, Codex, Cursor, Gemini CLI and OpenClaw that fetch YouTube transcripts, search videos and browse channels and playlists via the GetYouTubeTranscript API |
+| **AlphaSift** | https://github.com/ZhuLinsen/alphasift | Apache-2.0 multi-market stock discovery skill (`SKILL.md`), Python CLI, and 14-tool read-only local MCP server featuring purged walk-forward pattern replay and daily T+N benchmark evaluation across 7 equity markets |
 
 <a id="application-scenarios"></a>
 
